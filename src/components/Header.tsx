@@ -1,0 +1,113 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/work", label: "Work" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+
+export function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
+  return (
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? "border-b border-border bg-bg-elevated/80 backdrop-blur-md"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:px-12">
+          <Link href="/" className="relative z-50 shrink-0" aria-label="23 Films home">
+            <Image
+              src="/logo.png"
+              alt="23 Films"
+              width={120}
+              height={32}
+              className="h-8 w-auto"
+              priority
+            />
+          </Link>
+
+          <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-nav text-text/80 transition-colors hover:text-text"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              href="/contact"
+              className="text-nav link-arrow text-text"
+            >
+              Start a Project →
+            </Link>
+          </nav>
+
+          <button
+            type="button"
+            className="relative z-50 flex items-center justify-center lg:hidden"
+            onClick={() => setMenuOpen((open) => !open)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X size={24} strokeWidth={1} /> : <Menu size={24} strokeWidth={1} />}
+          </button>
+        </div>
+      </header>
+
+      <div
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-bg transition-opacity duration-300 lg:hidden ${
+          menuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+        }`}
+        aria-hidden={!menuOpen}
+      >
+        <nav className="flex flex-col items-center gap-8" aria-label="Mobile">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="font-display text-3xl text-display text-text"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            onClick={() => setMenuOpen(false)}
+            className="mt-4 text-nav link-arrow text-text-muted"
+          >
+            Start a Project →
+          </Link>
+        </nav>
+      </div>
+    </>
+  );
+}
