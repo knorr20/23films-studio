@@ -16,6 +16,9 @@ export interface Project {
 
 export const SHOWREEL_VIMEO_ID = "982264133";
 
+/** Local fullscreen hero background — replace file at public/hero/hero.mp4 */
+export const HERO_VIDEO_SRC = "/hero/hero.mp4";
+
 export const projects: Project[] = [
   {
     slug: "23-production-showreel-2023",
