@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { services } from "@/data/services";
-import { ContactCta } from "@/components/ContactCta";
 import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -43,7 +42,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <ContactCta />
     </>
   );
 }

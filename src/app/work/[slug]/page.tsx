@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VimeoPlayer } from "@/components/VimeoPlayer";
-import { ContactCta } from "@/components/ContactCta";
 import { siteConfig } from "@/data/site";
 import {
   getAdjacentProjects,
@@ -87,16 +85,6 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
             </p>
           </div>
 
-          <div className="relative mt-12 aspect-video max-w-3xl overflow-hidden bg-bg-elevated">
-            <Image
-              src={project.thumbnail}
-              alt={`${project.title} still`}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
-
           <nav
             className="mt-16 flex flex-col justify-between gap-6 border-t border-border pt-8 sm:flex-row"
             aria-label="Project navigation"
@@ -122,10 +110,14 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
               <span />
             )}
           </nav>
+
+          <p className="mt-12 text-nav">
+            <Link href="/contact" className="link-arrow text-text-muted hover:text-text">
+              Start a project with 23 Production →
+            </Link>
+          </p>
         </div>
       </article>
-
-      <ContactCta />
     </>
   );
 }

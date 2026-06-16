@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "https://23films.studio/wp-content/uploads/2024/08/scrnew2023.jpg",
+        url: "/hero/og.jpg",
         width: 1920,
         height: 1080,
         alt: "23 Production showreel",

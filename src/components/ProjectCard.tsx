@@ -50,7 +50,7 @@ export function ProjectCard({ project, showMetaBelow = true }: ProjectCardProps)
           {project.previewVideo && (
             <video
               ref={videoRef}
-              className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-[600ms] group-hover:opacity-100"
+              className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-[600ms] group-focus-within:opacity-100 group-hover:opacity-100 max-md:hidden"
               muted
               loop
               playsInline
@@ -60,18 +60,11 @@ export function ProjectCard({ project, showMetaBelow = true }: ProjectCardProps)
             </video>
           )}
 
-          <div className="absolute inset-0 bg-overlay opacity-0 transition-opacity duration-[600ms] group-hover:opacity-100" />
-
-          <div className="absolute inset-x-0 bottom-0 translate-y-2 p-6 opacity-0 transition-all duration-[600ms] group-hover:translate-y-0 group-hover:opacity-100">
-            <p className="text-nav text-text">{project.title}</p>
-            {project.subtitle && (
-              <p className="mt-1 text-[12px] text-text-muted">{project.subtitle}</p>
-            )}
-          </div>
+          <div className="absolute inset-0 bg-overlay opacity-0 transition-opacity duration-[600ms] group-focus-within:opacity-100 group-hover:opacity-100" />
         </div>
 
         {showMetaBelow && (
-          <div className="mt-3 flex flex-col gap-1">
+          <div className="mt-3 flex flex-col gap-1 border-b border-transparent py-1 transition-colors group-hover:border-border">
             <p className="text-nav text-text">{project.title}</p>
             <p className="text-caption">{formatProjectMeta(project)}</p>
           </div>

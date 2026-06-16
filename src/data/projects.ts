@@ -16,9 +16,6 @@ export interface Project {
 
 export const SHOWREEL_VIMEO_ID = "982264133";
 
-export const HERO_VIDEO_URL =
-  "https://23films.studio/wp-content/themes/just1page/video/bg.mp4";
-
 export const projects: Project[] = [
   {
     slug: "23-production-showreel-2023",
@@ -29,7 +26,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "982264133",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2024/08/scrnew2023.jpg",
+      "/work/23-production-showreel-2023.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/08/2024-07-15-10.10.36-3.mp4",
     featured: true,
@@ -43,7 +40,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/65592b63b8b004eea7752d8d_1-p-1080.webp",
+      "/work/who-i-am.webp",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
     featured: true,
@@ -59,7 +56,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "843444596",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/64b6a24ea18be6fe240a5f71_Снимок-экрана-2023-07-16-в-05.36.30-p-1080.jpg",
+      "/work/porsche-gt3.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
@@ -75,7 +72,7 @@ export const projects: Project[] = [
     year: 2024,
     vimeoId: "943821726",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2024/07/Снимок-экрана-2024-07-14-в-06.26.55.png",
+      "/work/lamborghini-aventador.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5279-1.mp4",
     featured: true,
@@ -91,7 +88,7 @@ export const projects: Project[] = [
     year: 2024,
     vimeoId: "955623164",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2024/07/Снимок-экрана-2024-07-14-в-06.30.30.png",
+      "/work/estate-in-palma-de-mallorca-spain.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5282.mp4",
     featured: true,
@@ -107,7 +104,7 @@ export const projects: Project[] = [
     year: 2024,
     vimeoId: "947169018",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2024/07/Снимок-экрана-2024-07-14-в-06.29.51.png",
+      "/work/new-video-for-nuvola-capitanio.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/2024-07-14-06.33.35.mp4",
     featured: true,
@@ -122,7 +119,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "826808018",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/64649624945bf822a802ac5e_soda-preview-p-1600.webp",
+      "/work/soda-please.webp",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/soda-4sec.mp4",
     featured: false,
@@ -137,7 +134,7 @@ export const projects: Project[] = [
     year: 2024,
     vimeoId: "943791067",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2024/07/Снимок-экрана-2024-07-14-в-05.20.37.png",
+      "/work/muscle-intelligence.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
@@ -151,7 +148,7 @@ export const projects: Project[] = [
     year: 2024,
     vimeoId: "908917112",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2024/02/IMG_5976.jpg",
+      "/work/gareth-west.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/02/west.mov",
     featured: false,
@@ -166,7 +163,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "804426164",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/645c02ab7f980aae710c8764_photo_2023-05-10_23-43-59-2-p-1080.jpg",
+      "/work/new-video-for-upholstery-inc.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
@@ -181,7 +178,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "851888830",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/65592bb8309c6b9c06c49a68_1v2-p-1080.webp",
+      "/work/aston-martin-vantage-v12.webp",
     featured: false,
     description:
       "Automotive film emphasizing lines, power, and luxury craftsmanship.",
@@ -193,7 +190,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "882311184",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/65592c21262466a4130e6913_1v2-p-1080.webp",
+      "/work/ben-pakulski.webp",
     featured: false,
     description:
       "Fitness and personal brand content with dynamic pacing and strong visual identity.",
@@ -206,7 +203,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "826808018",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/65592cbbf4d3d4dd56249237_6v2-p-1080.webp",
+      "/work/soda-please-ii-teaser.webp",
     featured: false,
     description: "Teaser cut for the Soda Please campaign sequel.",
   },
@@ -217,7 +214,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/65592d0bde12de54c5f27b73_1v2-p-1080.webp",
+      "/work/growerev.webp",
     featured: false,
     description: "Brand film with editorial pacing and product-focused visuals.",
   },
@@ -228,7 +225,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/645c0196fc14bd721a8c6180_photo_2023-05-10_23-39-25-p-1080.jpg",
+      "/work/ruffian-who-am-i.jpg",
     featured: false,
     description: "Behind-the-scenes look at the Ruffian Who Am I production.",
   },
@@ -239,7 +236,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/645c993e0fe52c02c007136b_Untitled_1.1.1-p-1080.jpg",
+      "/work/smoke-vibe.jpg",
     featured: false,
     description: "Stylized photo session with atmospheric lighting and editorial composition.",
   },
@@ -250,7 +247,7 @@ export const projects: Project[] = [
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
-      "https://23films.studio/wp-content/uploads/2023/12/645c985069005d56e8b99325_8-img-p-1080.jpg",
+      "/work/mandi-holding.jpg",
     featured: false,
     description: "Corporate and portrait photography for Mandi Holding.",
   },

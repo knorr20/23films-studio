@@ -6,17 +6,17 @@ export function TrustedClients() {
     <section className="section-padding border-t border-border">
       <div className="max-content">
         <ScrollReveal>
-          <p className="text-caption mb-8">Trusted by</p>
-          <div className="flex flex-wrap items-center gap-x-10 gap-y-4">
+          <p className="text-caption mb-10">Trusted by</p>
+          <ul className="grid grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-3 lg:grid-cols-5">
             {trustedClients.map((client) => (
-              <span
+              <li
                 key={client}
-                className="font-display text-lg text-display text-text-subtle transition-colors duration-300 hover:text-text-muted md:text-xl"
+                className="font-display text-sm text-display text-text-subtle transition-colors duration-300 hover:text-text md:text-base"
               >
                 {client}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </ScrollReveal>
       </div>
     </section>

@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "23 Films",
+  name: "23 Production",
   legalName: "23 Production LLC",
   tagline: "Commercial · Automotive · Real Estate",
   description:

@@ -30,7 +30,7 @@ export function WorkFilters({ active }: WorkFiltersProps) {
   };
 
   return (
-    <div className="flex flex-wrap gap-6 border-b border-border pb-6">
+    <div className="flex flex-wrap gap-x-8 gap-y-3 border-b border-border pb-6">
       {filters.map((filter) => {
         const isActive = active === filter.value;
         return (
@@ -38,8 +38,10 @@ export function WorkFilters({ active }: WorkFiltersProps) {
             key={filter.value}
             type="button"
             onClick={() => setFilter(filter.value)}
-            className={`text-nav transition-opacity ${
-              isActive ? "text-text" : "text-text-muted hover:text-text"
+            className={`text-nav pb-3 transition-colors ${
+              isActive
+                ? "border-b border-text text-text"
+                : "border-b border-transparent text-text-muted hover:text-text"
             }`}
             aria-pressed={isActive}
           >

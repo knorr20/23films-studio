@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { aboutParagraphs, siteConfig } from "@/data/site";
-import { ContactCta } from "@/components/ContactCta";
 import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -43,7 +42,6 @@ export default function AboutPage() {
           </ScrollReveal>
         </div>
       </section>
-      <ContactCta />
     </>
   );
 }

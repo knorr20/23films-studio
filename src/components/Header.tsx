@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -13,7 +14,13 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+function isActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function Header() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -41,31 +48,36 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:px-12">
-          <Link href="/" className="relative z-50 shrink-0" aria-label="23 Films home">
+          <Link href="/" className="relative z-50 shrink-0" aria-label="23 Production home">
             <Image
               src="/logo.png"
-              alt="23 Films"
-              width={120}
-              height={32}
-              className="h-8 w-auto"
+              alt="23 Production"
+              width={140}
+              height={40}
+              className="h-10 w-auto"
               priority
             />
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-nav text-text/80 transition-colors hover:text-text"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/contact"
-              className="text-nav link-arrow text-text"
-            >
+            {navLinks.map((link) => {
+              const active = isActive(pathname, link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`border-b pb-0.5 text-nav transition-colors ${
+                    active
+                      ? "border-text text-text"
+                      : "border-transparent text-text/70 hover:border-text/40 hover:text-text"
+                  }`}
+                  aria-current={active ? "page" : undefined}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+            <Link href="/contact" className="text-nav link-arrow text-text">
               Start a Project →
             </Link>
           </nav>
@@ -89,20 +101,26 @@ export function Header() {
         aria-hidden={!menuOpen}
       >
         <nav className="flex flex-col items-center gap-8" aria-label="Mobile">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="font-display text-3xl text-display text-text"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const active = isActive(pathname, link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className={`font-display text-3xl text-display ${
+                  active ? "text-text" : "text-text-muted"
+                }`}
+                aria-current={active ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <Link
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-4 text-nav link-arrow text-text-muted"
+            className="mt-4 text-nav link-arrow text-text"
           >
             Start a Project →
           </Link>
