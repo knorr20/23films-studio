@@ -29,6 +29,22 @@
     @apply bg-white text-bg;
   }
 
+  .scroll-hint {
+    animation: scrollHint 2.2s var(--ease-out-expo) infinite;
+  }
+
+  @keyframes scrollHint {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.35;
+    }
+    50% {
+      transform: translateY(8px);
+      opacity: 0.9;
+    }
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -111,5 +127,10 @@
 
   .project-card-media {
     transition: none !important;
+  }
+
+  .scroll-hint {
+    animation: none !important;
+    opacity: 0.5 !important;
   }
 }
