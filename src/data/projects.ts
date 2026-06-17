@@ -104,7 +104,7 @@ export const projects: Project[] = [
     vimeoId: "882311184",
     thumbnail:
       "/work/ben-pakulski.webp",
-    featured: false,
+    featured: true,
     description:
       "Fitness and personal brand content with dynamic pacing and strong visual identity.",
   },
@@ -224,7 +224,7 @@ export const projects: Project[] = [
       "/work/who-i-am.webp",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
-    featured: true,
+    featured: false,
     description:
       "A cinematic character piece built around mood, performance, and intimate framing.",
   },
