@@ -33,22 +33,6 @@ export const HERO_VIDEO_SRC = "/hero/hero.mp4";
 
 export const projects: Project[] = [
   {
-    slug: "23-production-showreel-2023",
-    title: "23 Production — Showreel 2023",
-    subtitle: "Showreel 2023",
-    category: "commercial",
-    client: "23 Production",
-    year: 2023,
-    vimeoId: "982264133",
-    thumbnail:
-      "/work/23-production-showreel-2023.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2024/08/2024-07-15-10.10.36-3.mp4",
-    featured: true,
-    description:
-      "A curated showcase of commercial, automotive, and luxury real estate work from 23 Production.",
-  },
-  {
     slug: "who-i-am",
     title: "Who I Am?",
     category: "narrative",
@@ -232,28 +216,6 @@ export const projects: Project[] = [
       "/work/growerev.webp",
     featured: false,
     description: "Brand film with editorial pacing and product-focused visuals.",
-  },
-  {
-    slug: "ruffian-who-am-i",
-    title: "Ruffian — Who Am I",
-    category: "narrative",
-    year: 2023,
-    vimeoId: "885891560",
-    thumbnail:
-      "/work/ruffian-who-am-i.jpg",
-    featured: false,
-    description: "Behind-the-scenes look at the Ruffian Who Am I production.",
-  },
-  {
-    slug: "smoke-vibe",
-    title: "Smoke Vibe",
-    category: "commercial",
-    year: 2023,
-    vimeoId: "885891560",
-    thumbnail:
-      "/work/smoke-vibe.jpg",
-    featured: false,
-    description: "Stylized photo session with atmospheric lighting and editorial composition.",
   },
   {
     slug: "mandi-holding",
