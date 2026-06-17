@@ -47,8 +47,8 @@ export const projects: Project[] = [
     stills: [
       "/work/porsche-gt3/still-01.png",
       "/work/porsche-gt3/still-02.png",
-      "/work/porsche-gt3/still-03.png",
       "/work/porsche-gt3/still-04.png",
+      "/work/porsche-gt3/still-03.png",
       "/work/porsche-gt3/still-05.png",
     ],
   },
