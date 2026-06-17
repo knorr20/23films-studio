@@ -97,6 +97,29 @@ export const projects: Project[] = [
       "International real estate storytelling for one of London's most distinctive penthouse properties.",
   },
   {
+    slug: "ben-pakulski",
+    title: "Ben Pakulski",
+    category: "commercial",
+    year: 2023,
+    vimeoId: "882311184",
+    thumbnail:
+      "/work/ben-pakulski.webp",
+    featured: false,
+    description:
+      "Fitness and personal brand content with dynamic pacing and strong visual identity.",
+  },
+  {
+    slug: "growerev",
+    title: "GroweRev",
+    category: "commercial",
+    year: 2023,
+    vimeoId: "885891560",
+    thumbnail:
+      "/work/growerev.webp",
+    featured: false,
+    description: "Brand film with editorial pacing and product-focused visuals.",
+  },
+  {
     slug: "soda-please",
     title: "Soda Please",
     subtitle: "Fizzy Obsession: A Bitter Twist",
@@ -169,18 +192,6 @@ export const projects: Project[] = [
       "Automotive film emphasizing lines, power, and luxury craftsmanship.",
   },
   {
-    slug: "ben-pakulski",
-    title: "Ben Pakulski",
-    category: "commercial",
-    year: 2023,
-    vimeoId: "882311184",
-    thumbnail:
-      "/work/ben-pakulski.webp",
-    featured: false,
-    description:
-      "Fitness and personal brand content with dynamic pacing and strong visual identity.",
-  },
-  {
     slug: "soda-please-ii-teaser",
     title: "Soda Please II",
     subtitle: "Teaser",
@@ -191,17 +202,6 @@ export const projects: Project[] = [
       "/work/soda-please-ii-teaser.webp",
     featured: false,
     description: "Teaser cut for the Soda Please campaign sequel.",
-  },
-  {
-    slug: "growerev",
-    title: "GroweRev",
-    category: "commercial",
-    year: 2023,
-    vimeoId: "885891560",
-    thumbnail:
-      "/work/growerev.webp",
-    featured: false,
-    description: "Brand film with editorial pacing and product-focused visuals.",
   },
   {
     slug: "mandi-holding",
