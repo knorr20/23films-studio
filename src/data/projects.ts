@@ -33,20 +33,6 @@ export const HERO_VIDEO_SRC = "/hero/hero.mp4";
 
 export const projects: Project[] = [
   {
-    slug: "who-i-am",
-    title: "Who I Am?",
-    category: "narrative",
-    year: 2023,
-    vimeoId: "885891560",
-    thumbnail:
-      "/work/who-i-am.webp",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
-    featured: true,
-    description:
-      "A cinematic character piece built around mood, performance, and intimate framing.",
-  },
-  {
     slug: "porsche-gt3",
     title: "Porsche GT3",
     subtitle: "Commercial video for Porsche",
@@ -227,5 +213,19 @@ export const projects: Project[] = [
       "/work/mandi-holding.jpg",
     featured: false,
     description: "Corporate and portrait photography for Mandi Holding.",
+  },
+  {
+    slug: "who-i-am",
+    title: "Who Am I?",
+    category: "narrative",
+    year: 2023,
+    vimeoId: "885891560",
+    thumbnail:
+      "/work/who-i-am.webp",
+    previewVideo:
+      "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
+    featured: true,
+    description:
+      "A cinematic character piece built around mood, performance, and intimate framing.",
   },
 ];
