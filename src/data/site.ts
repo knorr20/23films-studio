@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "23 Production",
   legalName: "23 Production LLC",
-  tagline: "Commercial · Automotive · Real Estate",
+  tagline: "Concept · Production · Post",
   description:
     "Top-tier video production company with over 20 years of global experience. Commercial, automotive, luxury real estate, and branded content.",
   url: "https://23films.studio",
