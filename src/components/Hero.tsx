@@ -14,7 +14,7 @@ export function Hero() {
         loop
         playsInline
         preload="auto"
-        poster="/hero/poster.webp"
+        poster="/hero/poster.jpg"
       >
         <source src={HERO_VIDEO_SRC} type="video/mp4" />
       </video>
