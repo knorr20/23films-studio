@@ -109,6 +109,18 @@ export const projects: Project[] = [
       "Fitness and personal brand content with dynamic pacing and strong visual identity.",
   },
   {
+    slug: "morten-artbat-hollow",
+    title: "MORTEN & ARTBAT ft. Bonn — Hollow",
+    subtitle: "Official Music Video",
+    category: "music-video",
+    client: "MORTEN & ARTBAT",
+    vimeoId: "1126298417",
+    thumbnail: "/work/morten-artbat-hollow.jpg",
+    featured: false,
+    description:
+      "Official music video for Hollow — cinematic performance and atmosphere at festival scale.",
+  },
+  {
     slug: "growerev",
     title: "GroweRev",
     category: "commercial",
