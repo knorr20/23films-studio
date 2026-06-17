@@ -1,4 +1,16 @@
-export type ProjectCategory = "video" | "photo" | "bts";
+export type ProjectCategory = "commercial" | "music-video" | "narrative";
+
+export const PROJECT_CATEGORY_LABELS: Record<ProjectCategory, string> = {
+  commercial: "Commercial",
+  "music-video": "Music Video",
+  narrative: "Narrative",
+};
+
+export const PROJECT_CATEGORIES: ProjectCategory[] = [
+  "commercial",
+  "music-video",
+  "narrative",
+];
 
 export interface Project {
   slug: string;
@@ -24,7 +36,7 @@ export const projects: Project[] = [
     slug: "23-production-showreel-2023",
     title: "23 Production — Showreel 2023",
     subtitle: "Showreel 2023",
-    category: "video",
+    category: "commercial",
     client: "23 Production",
     year: 2023,
     vimeoId: "982264133",
@@ -39,7 +51,7 @@ export const projects: Project[] = [
   {
     slug: "who-i-am",
     title: "Who I Am?",
-    category: "video",
+    category: "narrative",
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
@@ -54,7 +66,7 @@ export const projects: Project[] = [
     slug: "porsche-gt3",
     title: "Porsche GT3",
     subtitle: "Commercial video for Porsche",
-    category: "video",
+    category: "commercial",
     client: "Porsche",
     year: 2023,
     vimeoId: "843444596",
@@ -70,7 +82,7 @@ export const projects: Project[] = [
     slug: "lamborghini-aventador",
     title: "Lamborghini Aventador",
     subtitle: "Lamborghini Aventador by RR Auto-Group",
-    category: "video",
+    category: "commercial",
     client: "RR Auto-Group",
     year: 2024,
     vimeoId: "943821726",
@@ -86,7 +98,7 @@ export const projects: Project[] = [
     slug: "estate-in-palma-de-mallorca-spain",
     title: "Estate in Palma de Mallorca, Spain",
     subtitle: "$45,000,000 Estate by Nuvola Capitanio",
-    category: "video",
+    category: "commercial",
     client: "Nuvola Capitanio",
     year: 2024,
     vimeoId: "955623164",
@@ -102,7 +114,7 @@ export const projects: Project[] = [
     slug: "new-video-for-nuvola-capitanio",
     title: "London's Most Unique Penthouse",
     subtitle: "New video for Nuvola Capitanio",
-    category: "video",
+    category: "commercial",
     client: "Nuvola Capitanio",
     year: 2024,
     vimeoId: "947169018",
@@ -118,7 +130,7 @@ export const projects: Project[] = [
     slug: "soda-please",
     title: "Soda Please",
     subtitle: "Fizzy Obsession: A Bitter Twist",
-    category: "video",
+    category: "commercial",
     year: 2023,
     vimeoId: "826808018",
     thumbnail:
@@ -133,7 +145,7 @@ export const projects: Project[] = [
     slug: "muscle-intelligence",
     title: "Muscle Intelligence",
     subtitle: "Muscle Intelligence Camp in Spain 2024",
-    category: "video",
+    category: "commercial",
     year: 2024,
     vimeoId: "943791067",
     thumbnail:
@@ -147,7 +159,7 @@ export const projects: Project[] = [
   {
     slug: "gareth-west",
     title: "Gareth West",
-    category: "video",
+    category: "commercial",
     year: 2024,
     vimeoId: "908917112",
     thumbnail:
@@ -161,7 +173,7 @@ export const projects: Project[] = [
     slug: "new-video-for-upholstery-inc",
     title: "New Video For Upholstery Inc.",
     subtitle: "Fizzy Obsession: A Bitter Twist",
-    category: "video",
+    category: "commercial",
     client: "Upholstery Inc.",
     year: 2023,
     vimeoId: "804426164",
@@ -176,7 +188,7 @@ export const projects: Project[] = [
   {
     slug: "aston-martin-vantage-v12",
     title: "Aston Martin Vantage V12",
-    category: "video",
+    category: "commercial",
     client: "Aston Martin",
     year: 2023,
     vimeoId: "851888830",
@@ -189,7 +201,7 @@ export const projects: Project[] = [
   {
     slug: "ben-pakulski",
     title: "Ben Pakulski",
-    category: "video",
+    category: "commercial",
     year: 2023,
     vimeoId: "882311184",
     thumbnail:
@@ -202,7 +214,7 @@ export const projects: Project[] = [
     slug: "soda-please-ii-teaser",
     title: "Soda Please II",
     subtitle: "Teaser",
-    category: "video",
+    category: "commercial",
     year: 2023,
     vimeoId: "826808018",
     thumbnail:
@@ -213,7 +225,7 @@ export const projects: Project[] = [
   {
     slug: "growerev",
     title: "GroweRev",
-    category: "video",
+    category: "commercial",
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
@@ -224,7 +236,7 @@ export const projects: Project[] = [
   {
     slug: "ruffian-who-am-i",
     title: "Ruffian — Who Am I",
-    category: "bts",
+    category: "narrative",
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
@@ -235,7 +247,7 @@ export const projects: Project[] = [
   {
     slug: "smoke-vibe",
     title: "Smoke Vibe",
-    category: "photo",
+    category: "commercial",
     year: 2023,
     vimeoId: "885891560",
     thumbnail:
@@ -246,7 +258,7 @@ export const projects: Project[] = [
   {
     slug: "mandi-holding",
     title: "Mandi Holding",
-    category: "photo",
+    category: "commercial",
     year: 2023,
     vimeoId: "885891560",
     thumbnail:

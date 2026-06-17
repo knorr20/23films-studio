@@ -5,9 +5,9 @@ import type { ProjectCategory } from "@/data/projects";
 
 const filters: { value: ProjectCategory | "all"; label: string }[] = [
   { value: "all", label: "All" },
-  { value: "video", label: "Video" },
-  { value: "photo", label: "Photo" },
-  { value: "bts", label: "BTS" },
+  { value: "commercial", label: "Commercial" },
+  { value: "music-video", label: "Music Video" },
+  { value: "narrative", label: "Narrative" },
 ];
 
 interface WorkFiltersProps {

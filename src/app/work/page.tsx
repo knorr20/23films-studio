@@ -4,28 +4,32 @@ import { ProjectGrid } from "@/components/ProjectGrid";
 import { WorkFilters } from "@/components/WorkFilters";
 import { ContactCta } from "@/components/ContactCta";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import type { ProjectCategory } from "@/data/projects";
+import {
+  PROJECT_CATEGORIES,
+  type ProjectCategory,
+} from "@/data/projects";
 import { getProjectsByCategory } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Commercial, automotive, luxury real estate, and branded content from 23 Production.",
+    "Commercial, music video, and narrative work from 23 Production.",
 };
 
 interface WorkPageProps {
   searchParams: Promise<{ category?: string }>;
 }
 
+function parseCategory(param?: string): ProjectCategory | "all" {
+  if (param && PROJECT_CATEGORIES.includes(param as ProjectCategory)) {
+    return param as ProjectCategory;
+  }
+  return "all";
+}
+
 export default async function WorkPage({ searchParams }: WorkPageProps) {
   const params = await searchParams;
-  const categoryParam = params.category;
-  const category: ProjectCategory | "all" =
-    categoryParam === "video" ||
-    categoryParam === "photo" ||
-    categoryParam === "bts"
-      ? categoryParam
-      : "all";
+  const category = parseCategory(params.category);
 
   const filtered = getProjectsByCategory(category);
 

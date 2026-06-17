@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VimeoPlayer } from "@/components/VimeoPlayer";
+import { PROJECT_CATEGORY_LABELS } from "@/data/projects";
 import { siteConfig } from "@/data/site";
 import {
   getAdjacentProjects,
@@ -70,7 +71,11 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
           <div className="mt-12 max-w-3xl">
             <p className="text-caption mb-4">
-              {[project.client, project.year, project.category]
+              {[
+                project.client,
+                project.year,
+                PROJECT_CATEGORY_LABELS[project.category],
+              ]
                 .filter(Boolean)
                 .join(" · ")}
             </p>
