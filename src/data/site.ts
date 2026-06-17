@@ -6,8 +6,8 @@ export const siteConfig = {
     "Top-tier video production company with over 20 years of global experience. Commercial, automotive, luxury real estate, and branded content.",
   url: "https://23films.studio",
   email: "contact@23filming.com",
-  phones: ["+1 310 894 11 60", "+1 424 387 58 83"],
-  phoneLinks: ["+13108941160", "+14243875883"],
+  phones: ["+1 310 894 11 60", "+1 213 335 9103"],
+  phoneLinks: ["+13108941160", "+12133359103"],
   address: {
     city: "North Hollywood",
     region: "CA",
@@ -16,7 +16,7 @@ export const siteConfig = {
   social: {
     instagram: "https://www.instagram.com/t.w.e.n.t.y.t.h.r.e.e/",
     telegram: "https://t.me/films23studio",
-    whatsapp: "https://wa.me/14243875883",
+    whatsapp: "https://wa.me/12133359103",
   },
   studioRentalUrl: "https://23photostudio.com",
 };
