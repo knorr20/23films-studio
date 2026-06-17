@@ -110,15 +110,22 @@ export const projects: Project[] = [
   },
   {
     slug: "morten-artbat-hollow",
-    title: "MORTEN & ARTBAT ft. Bonn — Hollow",
-    subtitle: "Official Music Video",
+    title: "MORTEN & ARTBAT ft. Bonn — \"Hollow\"",
     category: "music-video",
-    client: "MORTEN & ARTBAT",
+    client: "ARTBAT",
     vimeoId: "1126298417",
-    thumbnail: "/work/morten-artbat-hollow.jpg",
+    thumbnail: "/work/morten-artbat-hollow/still-01.png",
     featured: false,
     description:
-      "Official music video for Hollow — cinematic performance and atmosphere at festival scale.",
+      "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/morten-artbat-hollow/still-01.png",
+      "/work/morten-artbat-hollow/still-02.png",
+      "/work/morten-artbat-hollow/still-03.png",
+      "/work/morten-artbat-hollow/still-04.png",
+      "/work/morten-artbat-hollow/still-05.png",
+      "/work/morten-artbat-hollow/still-06.png",
+    ],
   },
   {
     slug: "growerev",
