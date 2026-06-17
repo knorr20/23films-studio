@@ -58,7 +58,7 @@ export const projects: Project[] = [
     subtitle: "Lamborghini Aventador by RR Auto-Group",
     category: "commercial",
     client: "RR Auto-Group",
-    vimeoId: "943821726",
+    vimeoId: "1202006049",
     thumbnail:
       "/work/lamborghini-aventador.png",
     previewVideo:
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     slug: "ben-pakulski",
     title: "Ben Pakulski",
     category: "commercial",
-    vimeoId: "882311184",
+    vimeoId: "1202001870",
     thumbnail:
       "/work/ben-pakulski.webp",
     featured: true,
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     slug: "growerev",
     title: "GroweRev",
     category: "commercial",
-    vimeoId: "885891560",
+    vimeoId: "1202001868",
     thumbnail:
       "/work/growerev.webp",
     featured: false,
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     title: "Soda Please",
     subtitle: "Fizzy Obsession: A Bitter Twist",
     category: "commercial",
-    vimeoId: "826808018",
+    vimeoId: "1126304129",
     thumbnail:
       "/work/soda-please.webp",
     previewVideo:
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     title: "Muscle Intelligence",
     subtitle: "Muscle Intelligence Camp in Spain",
     category: "commercial",
-    vimeoId: "943791067",
+    vimeoId: "1202001871",
     thumbnail:
       "/work/muscle-intelligence.png",
     previewVideo:
@@ -147,24 +147,12 @@ export const projects: Project[] = [
       "Event coverage and brand film capturing training, energy, and community on location in Spain.",
   },
   {
-    slug: "gareth-west",
-    title: "Gareth West",
-    category: "commercial",
-    vimeoId: "908917112",
-    thumbnail:
-      "/work/gareth-west.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2024/02/west.mov",
-    featured: false,
-    description: "Portrait-driven commercial piece focused on presence and performance.",
-  },
-  {
     slug: "new-video-for-upholstery-inc",
     title: "New Video For Upholstery Inc.",
     subtitle: "Fizzy Obsession: A Bitter Twist",
     category: "commercial",
     client: "Upholstery Inc.",
-    vimeoId: "804426164",
+    vimeoId: "1126299379",
     thumbnail:
       "/work/new-video-for-upholstery-inc.jpg",
     previewVideo:
@@ -178,7 +166,7 @@ export const projects: Project[] = [
     title: "Aston Martin Vantage V12",
     category: "commercial",
     client: "Aston Martin",
-    vimeoId: "851888830",
+    vimeoId: "1126296330",
     thumbnail:
       "/work/aston-martin-vantage-v12.webp",
     featured: false,
@@ -200,7 +188,7 @@ export const projects: Project[] = [
     slug: "mandi-holding",
     title: "Mandi Holding",
     category: "commercial",
-    vimeoId: "885891560",
+    vimeoId: "1202001984",
     thumbnail:
       "/work/mandi-holding.jpg",
     featured: false,
