@@ -66,7 +66,9 @@ export function ProjectCard({ project, showMetaBelow = true }: ProjectCardProps)
         {showMetaBelow && (
           <div className="mt-3 flex flex-col gap-1 border-b border-transparent py-1 transition-colors group-hover:border-border">
             <p className="text-nav text-text">{project.title}</p>
-            <p className="text-caption">{formatProjectMeta(project)}</p>
+            {formatProjectMeta(project) ? (
+              <p className="text-caption">{formatProjectMeta(project)}</p>
+            ) : null}
           </div>
         )}
       </Link>

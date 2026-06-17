@@ -49,7 +49,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
     name: project.title,
     description: project.description,
     thumbnailUrl: project.thumbnail,
-    uploadDate: `${project.year}-01-01`,
+    uploadDate: "2026-01-01",
     contentUrl: `https://vimeo.com/${project.vimeoId}`,
     publisher: {
       "@type": "Organization",
@@ -71,11 +71,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
           <div className="mt-12 max-w-3xl">
             <p className="text-caption mb-4">
-              {[
-                project.client,
-                project.year,
-                PROJECT_CATEGORY_LABELS[project.category],
-              ]
+              {[project.client, PROJECT_CATEGORY_LABELS[project.category]]
                 .filter(Boolean)
                 .join(" · ")}
             </p>

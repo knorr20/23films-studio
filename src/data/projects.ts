@@ -18,7 +18,6 @@ export interface Project {
   subtitle?: string;
   category: ProjectCategory;
   client?: string;
-  year: number;
   vimeoId: string;
   thumbnail: string;
   previewVideo?: string;
@@ -38,7 +37,6 @@ export const projects: Project[] = [
     subtitle: "Commercial video for Porsche",
     category: "commercial",
     client: "Porsche",
-    year: 2023,
     vimeoId: "1126302394",
     thumbnail:
       "/work/porsche-gt3.jpg",
@@ -54,7 +52,6 @@ export const projects: Project[] = [
     subtitle: "Lamborghini Aventador by RR Auto-Group",
     category: "commercial",
     client: "RR Auto-Group",
-    year: 2024,
     vimeoId: "943821726",
     thumbnail:
       "/work/lamborghini-aventador.png",
@@ -70,7 +67,6 @@ export const projects: Project[] = [
     subtitle: "$45,000,000 Estate by Nuvola Capitanio",
     category: "commercial",
     client: "Nuvola Capitanio",
-    year: 2024,
     vimeoId: "955623164",
     thumbnail:
       "/work/estate-in-palma-de-mallorca-spain.png",
@@ -86,7 +82,6 @@ export const projects: Project[] = [
     subtitle: "New video for Nuvola Capitanio",
     category: "commercial",
     client: "Nuvola Capitanio",
-    year: 2024,
     vimeoId: "947169018",
     thumbnail:
       "/work/new-video-for-nuvola-capitanio.png",
@@ -100,7 +95,6 @@ export const projects: Project[] = [
     slug: "ben-pakulski",
     title: "Ben Pakulski",
     category: "commercial",
-    year: 2023,
     vimeoId: "882311184",
     thumbnail:
       "/work/ben-pakulski.webp",
@@ -112,7 +106,6 @@ export const projects: Project[] = [
     slug: "growerev",
     title: "GroweRev",
     category: "commercial",
-    year: 2023,
     vimeoId: "885891560",
     thumbnail:
       "/work/growerev.webp",
@@ -124,7 +117,6 @@ export const projects: Project[] = [
     title: "Soda Please",
     subtitle: "Fizzy Obsession: A Bitter Twist",
     category: "commercial",
-    year: 2023,
     vimeoId: "826808018",
     thumbnail:
       "/work/soda-please.webp",
@@ -137,9 +129,8 @@ export const projects: Project[] = [
   {
     slug: "muscle-intelligence",
     title: "Muscle Intelligence",
-    subtitle: "Muscle Intelligence Camp in Spain 2024",
+    subtitle: "Muscle Intelligence Camp in Spain",
     category: "commercial",
-    year: 2024,
     vimeoId: "943791067",
     thumbnail:
       "/work/muscle-intelligence.png",
@@ -153,7 +144,6 @@ export const projects: Project[] = [
     slug: "gareth-west",
     title: "Gareth West",
     category: "commercial",
-    year: 2024,
     vimeoId: "908917112",
     thumbnail:
       "/work/gareth-west.jpg",
@@ -168,7 +158,6 @@ export const projects: Project[] = [
     subtitle: "Fizzy Obsession: A Bitter Twist",
     category: "commercial",
     client: "Upholstery Inc.",
-    year: 2023,
     vimeoId: "804426164",
     thumbnail:
       "/work/new-video-for-upholstery-inc.jpg",
@@ -183,7 +172,6 @@ export const projects: Project[] = [
     title: "Aston Martin Vantage V12",
     category: "commercial",
     client: "Aston Martin",
-    year: 2023,
     vimeoId: "851888830",
     thumbnail:
       "/work/aston-martin-vantage-v12.webp",
@@ -196,7 +184,6 @@ export const projects: Project[] = [
     title: "Soda Please II",
     subtitle: "Teaser",
     category: "commercial",
-    year: 2023,
     vimeoId: "826808018",
     thumbnail:
       "/work/soda-please-ii-teaser.webp",
@@ -207,7 +194,6 @@ export const projects: Project[] = [
     slug: "mandi-holding",
     title: "Mandi Holding",
     category: "commercial",
-    year: 2023,
     vimeoId: "885891560",
     thumbnail:
       "/work/mandi-holding.jpg",
@@ -218,7 +204,6 @@ export const projects: Project[] = [
     slug: "who-i-am",
     title: "Who Am I?",
     category: "narrative",
-    year: 2023,
     vimeoId: "885891560",
     thumbnail:
       "/work/who-i-am.webp",

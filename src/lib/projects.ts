@@ -34,6 +34,5 @@ export function getAllProjectSlugs(): string[] {
 }
 
 export function formatProjectMeta(project: Project): string {
-  const parts = [project.client, String(project.year)].filter(Boolean);
-  return parts.join(" · ");
+  return project.client ?? "";
 }
