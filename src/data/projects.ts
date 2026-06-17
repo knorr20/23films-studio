@@ -43,12 +43,12 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
     description:
-      "Commercial for Porsche GT3 — pace, precision, and presence in motion.",
+      "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION.",
     stills: [
       "/work/porsche-gt3/still-01.png",
-      "/work/porsche-gt3/still-02.png",
       "/work/porsche-gt3/still-04.png",
       "/work/porsche-gt3/still-03.png",
+      "/work/porsche-gt3/still-02.png",
       "/work/porsche-gt3/still-05.png",
     ],
   },

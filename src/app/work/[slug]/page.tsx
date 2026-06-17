@@ -82,7 +82,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
             {project.subtitle && (
               <p className="mt-4 text-lg text-text-muted">{project.subtitle}</p>
             )}
-            <p className="mt-8 max-w-xl text-base leading-relaxed text-text-muted">
+            <p className="text-display mt-8 max-w-xl text-sm leading-relaxed tracking-[0.08em] text-text-muted">
               {project.description}
             </p>
           </div>
