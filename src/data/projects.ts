@@ -23,6 +23,7 @@ export interface Project {
   previewVideo?: string;
   featured: boolean;
   description: string;
+  stills?: string[];
 }
 
 export const SHOWREEL_VIMEO_ID = "982264133";
@@ -34,17 +35,22 @@ export const projects: Project[] = [
   {
     slug: "porsche-gt3",
     title: "Porsche GT3",
-    subtitle: "Commercial video for Porsche",
     category: "commercial",
     client: "Porsche",
     vimeoId: "1126302394",
-    thumbnail:
-      "/work/porsche-gt3.jpg",
+    thumbnail: "/work/porsche-gt3/still-01.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
     description:
-      "High-energy automotive commercial capturing the precision and presence of the Porsche GT3.",
+      "Commercial for Porsche GT3 — pace, precision, and presence in motion.",
+    stills: [
+      "/work/porsche-gt3/still-01.png",
+      "/work/porsche-gt3/still-02.png",
+      "/work/porsche-gt3/still-03.png",
+      "/work/porsche-gt3/still-04.png",
+      "/work/porsche-gt3/still-05.png",
+    ],
   },
   {
     slug: "lamborghini-aventador",

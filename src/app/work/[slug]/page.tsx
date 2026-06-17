@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { VimeoPlayer } from "@/components/VimeoPlayer";
+import { ProjectStills } from "@/components/ProjectStills";
 import { PROJECT_CATEGORY_LABELS } from "@/data/projects";
 import { siteConfig } from "@/data/site";
 import {
@@ -85,6 +86,10 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
               {project.description}
             </p>
           </div>
+
+          {project.stills && project.stills.length > 0 && (
+            <ProjectStills images={project.stills} title={project.title} />
+          )}
 
           <nav
             className="mt-16 flex flex-col justify-between gap-6 border-t border-border pt-8 sm:flex-row"
