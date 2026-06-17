@@ -24,6 +24,7 @@ export interface Project {
   featured: boolean;
   description: string;
   stills?: string[];
+  stillsFit?: "cover" | "contain";
 }
 
 export const SHOWREEL_VIMEO_ID = "982264133";
@@ -126,6 +127,7 @@ export const projects: Project[] = [
       "/work/morten-artbat-hollow/hollowthumb5.png",
       "/work/morten-artbat-hollow/hollowthumb6.png",
     ],
+    stillsFit: "contain",
   },
   {
     slug: "growerev",

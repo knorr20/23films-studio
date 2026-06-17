@@ -88,7 +88,11 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
           </div>
 
           {project.stills && project.stills.length > 0 && (
-            <ProjectStills images={project.stills} title={project.title} />
+            <ProjectStills
+              images={project.stills}
+              title={project.title}
+              fit={project.stillsFit}
+            />
           )}
 
           <nav
