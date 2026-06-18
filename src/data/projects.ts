@@ -180,7 +180,7 @@ export const projects: Project[] = [
     cardMeta: "Original",
     category: "commercial",
     vimeoId: "1126304129",
-    thumbnail: "/work/soda-please/sodaplease1.png",
+    thumbnail: "/work/soda-please.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/soda-4sec.mp4",
     featured: false,
