@@ -209,6 +209,15 @@ export const projects: Project[] = [
     featured: false,
     description:
       "BRAND CAMPAIGN — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/lucent-out-to-sea/still01.png",
+      "/work/lucent-out-to-sea/still02.png",
+      "/work/lucent-out-to-sea/still03.png",
+      "/work/lucent-out-to-sea/still04.png",
+      "/work/lucent-out-to-sea/still05.png",
+      "/work/lucent-out-to-sea/still06.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "growerev",
