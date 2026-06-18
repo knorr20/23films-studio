@@ -40,7 +40,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Porsche",
     vimeoId: "1126302394",
-    thumbnail: "/work/porsche-gt3/still01.jpg",
+    thumbnail: "/work/porsche-gt3/vimeo-poster.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "RR Auto-Group",
     vimeoId: "1202006049",
-    thumbnail: "/work/lamborghini-aventador/still02.png",
+    thumbnail: "/work/lamborghini-aventador/vimeo-poster.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5279-1.mp4",
     featured: true,
@@ -118,8 +118,9 @@ export const projects: Project[] = [
     slug: "ben-pakulski",
     title: "Ben Pakulski",
     category: "commercial",
+    client: "Ben Pakulski",
     vimeoId: "1202001870",
-    thumbnail: "/work/ben-pakulski.webp",
+    thumbnail: "/work/ben-pakulski/vimeo-poster.jpg",
     featured: true,
     description:
       "Fitness and personal brand content with dynamic pacing and strong visual identity. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -244,17 +245,16 @@ export const projects: Project[] = [
   },
   {
     slug: "new-video-for-upholstery-inc",
-    title: "New Video For Upholstery Inc.",
-    subtitle: "Fizzy Obsession: A Bitter Twist",
+    title: "New Life Upholstery",
     category: "commercial",
-    client: "Upholstery Inc.",
+    client: "New Life",
     vimeoId: "1126299379",
     thumbnail: "/work/new-video-for-upholstery-inc.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
     description:
-      "Commercial production for Upholstery Inc. with cinematic automotive detailing. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR NEW LIFE — UPHOLSTERY REIMAGINED WITH CINEMATIC AUTOMOTIVE DETAIL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/new-video-for-upholstery-inc/still01.jpg",
       "/work/new-video-for-upholstery-inc/still02.webp",
