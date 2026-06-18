@@ -4,10 +4,10 @@ import { ProjectGrid } from "@/components/ProjectGrid";
 import { TrustedClients } from "@/components/TrustedClients";
 import { ContactCta } from "@/components/ContactCta";
 import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
-import { getFeaturedProjects } from "@/lib/projects";
+import { getAllProjects } from "@/lib/projects";
 
 export default function HomePage() {
-  const featured = getFeaturedProjects();
+  const projects = getAllProjects();
 
   return (
     <>
@@ -18,18 +18,18 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-caption mb-4">Selected work</p>
+                <p className="text-caption mb-4">Portfolio</p>
                 <h2 className="font-display text-3xl text-display text-text md:text-5xl">
-                  Featured Projects
+                  Work
                 </h2>
               </div>
               <Link href="/work" className="text-nav link-arrow text-text-muted">
-                View all work →
+                Browse by category →
               </Link>
             </div>
           </ScrollReveal>
           <LineReveal className="mb-12" />
-          <ProjectGrid projects={featured} />
+          <ProjectGrid projects={projects} />
         </div>
       </section>
 
