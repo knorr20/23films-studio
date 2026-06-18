@@ -77,8 +77,7 @@ export const projects: Project[] = [
   },
   {
     slug: "estate-in-palma-de-mallorca-spain",
-    title: "Estate in Palma de Mallorca, Spain",
-    subtitle: "$45,000,000 Estate by Nuvola Capitanio",
+    title: "Malerca Estate",
     category: "commercial",
     client: "Nuvola Capitanio",
     vimeoId: "1202300697",
@@ -88,7 +87,14 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5282.mp4",
     featured: true,
     description:
-      "Luxury real estate film showcasing architecture, landscape, and lifestyle across Mallorca.",
+      "COMMERCIAL FOR NUVOLO CAPITANIO — MALERCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/estate-in-palma-de-mallorca-spain/still01.png",
+      "/work/estate-in-palma-de-mallorca-spain/still02.png",
+      "/work/estate-in-palma-de-mallorca-spain/still03.png",
+      "/work/estate-in-palma-de-mallorca-spain/still04.png",
+      "/work/estate-in-palma-de-mallorca-spain/still05.png",
+    ],
   },
   {
     slug: "new-video-for-nuvola-capitanio",
