@@ -210,7 +210,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
     description:
-      "FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "EVENT COVERAGE AND BRAND FILM CAPTURING TRAINING, ENERGY, AND COMMUNITY ON LOCATION IN SPAIN. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/muscle-intelligence/still01.png",
       "/work/muscle-intelligence/still02.png",
