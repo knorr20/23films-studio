@@ -60,8 +60,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "RR Auto-Group",
     vimeoId: "1202006049",
-    thumbnail:
-      "/work/lamborghini-aventador.png",
+    thumbnail: "/work/lamborghini-aventador/still02.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5279-1.mp4",
     featured: true,
