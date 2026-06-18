@@ -57,7 +57,6 @@ export const projects: Project[] = [
   {
     slug: "lamborghini-aventador",
     title: "Lamborghini Aventador",
-    subtitle: "Lamborghini Aventador by RR Auto-Group",
     category: "commercial",
     client: "RR Auto-Group",
     vimeoId: "1202006049",
@@ -67,7 +66,15 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5279-1.mp4",
     featured: true,
     description:
-      "Luxury automotive film blending dramatic lighting with sculptural vehicle cinematography.",
+      "COMMERCIAL FOR LAMBORGHINI AVENTADOR — DRAMATIC LIGHT, OPEN ROAD, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/lamborghini-aventador/still01.png",
+      "/work/lamborghini-aventador/still02.png",
+      "/work/lamborghini-aventador/still03.png",
+      "/work/lamborghini-aventador/still04.png",
+      "/work/lamborghini-aventador/still05.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "estate-in-palma-de-mallorca-spain",
