@@ -303,7 +303,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mandi-holding",
-    title: "Mardi Holding",
+    title: "City of Tomorrow",
     category: "commercial",
     client: "Mardi Holding",
     vimeoId: "1202001984",
