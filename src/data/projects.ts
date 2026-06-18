@@ -185,6 +185,19 @@ export const projects: Project[] = [
     featured: false,
     description:
       "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/morten-artbat-culture/still01.png",
+      "/work/morten-artbat-culture/still02.png",
+      "/work/morten-artbat-culture/still03.png",
+      "/work/morten-artbat-culture/still04.png",
+      "/work/morten-artbat-culture/still05.png",
+      "/work/morten-artbat-culture/still06.png",
+      "/work/morten-artbat-culture/still07.png",
+      "/work/morten-artbat-culture/still08.png",
+      "/work/morten-artbat-culture/still09.png",
+      "/work/morten-artbat-culture/still10.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "lucent-out-to-sea",
