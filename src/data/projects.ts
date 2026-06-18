@@ -220,6 +220,26 @@ export const projects: Project[] = [
     stillsFit: "contain",
   },
   {
+    slug: "lucent-show-up",
+    title: "Show Up",
+    category: "commercial",
+    client: "Lucent",
+    vimeoId: "1202001083",
+    thumbnail: "/work/lucent-show-up.jpg",
+    featured: false,
+    description:
+      "BRAND CAMPAIGN — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/lucent-show-up/still01.png",
+      "/work/lucent-show-up/still02.png",
+      "/work/lucent-show-up/still03.png",
+      "/work/lucent-show-up/still04.png",
+      "/work/lucent-show-up/still05.png",
+      "/work/lucent-show-up/still06.png",
+    ],
+    stillsFit: "contain",
+  },
+  {
     slug: "growerev",
     title: "GroweRev Brand Film",
     category: "commercial",
