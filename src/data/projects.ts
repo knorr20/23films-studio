@@ -40,7 +40,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Porsche",
     vimeoId: "1126302394",
-    thumbnail: "/work/porsche-gt3/still01.png",
+    thumbnail: "/work/porsche-gt3/still01.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     title: "Ben Pakulski",
     category: "commercial",
     vimeoId: "1202001870",
-    thumbnail: "/work/ben-pakulski/still01.webp",
+    thumbnail: "/work/ben-pakulski.webp",
     featured: true,
     description:
       "Fitness and personal brand content with dynamic pacing and strong visual identity. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     title: "GroweRev",
     category: "commercial",
     vimeoId: "1202001868",
-    thumbnail: "/work/growerev/still01.webp",
+    thumbnail: "/work/growerev.webp",
     featured: false,
     description:
       "Brand film with editorial pacing and product-focused visuals. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -228,7 +228,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Ben Pakulski",
     vimeoId: "1202001871",
-    thumbnail: "/work/muscle-intelligence/still01.png",
+    thumbnail: "/work/muscle-intelligence.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
@@ -249,7 +249,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Upholstery Inc.",
     vimeoId: "1126299379",
-    thumbnail: "/work/new-video-for-upholstery-inc/still01.jpg",
+    thumbnail: "/work/new-video-for-upholstery-inc.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
@@ -269,7 +269,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Aston Martin",
     vimeoId: "1126296330",
-    thumbnail: "/work/aston-martin-vantage-v12/still01.webp",
+    thumbnail: "/work/aston-martin-vantage-v12.webp",
     featured: false,
     description:
       "Automotive film emphasizing lines, power, and luxury craftsmanship. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -288,7 +288,7 @@ export const projects: Project[] = [
     cardMeta: "Original",
     category: "narrative",
     vimeoId: "1202300493",
-    thumbnail: "/work/soda-please-ii-teaser/still01.webp",
+    thumbnail: "/work/soda-please-ii-teaser.webp",
     featured: false,
     description:
       "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -305,7 +305,7 @@ export const projects: Project[] = [
     title: "Mandi Holding",
     category: "commercial",
     vimeoId: "1202001984",
-    thumbnail: "/work/mandi-holding/still01.jpg",
+    thumbnail: "/work/mandi-holding.jpg",
     featured: false,
     description:
       "Corporate and portrait photography for Mandi Holding. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -322,7 +322,7 @@ export const projects: Project[] = [
     title: "Who Am I?",
     category: "narrative",
     vimeoId: "1202299048",
-    thumbnail: "/work/who-i-am/still01.webp",
+    thumbnail: "/work/who-i-am.webp",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
     featured: false,
