@@ -77,7 +77,7 @@ export const projects: Project[] = [
   },
   {
     slug: "estate-in-palma-de-mallorca-spain",
-    title: "Malerca Estate",
+    title: "Mallorca Estate",
     category: "commercial",
     client: "Engel & Völkers",
     vimeoId: "1202300697",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5282.mp4",
     featured: true,
     description:
-      "COMMERCIAL FOR ENGEL & VÖLKERS — MALERCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR ENGEL & VÖLKERS — MALLORCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/estate-in-palma-de-mallorca-spain/still01.png",
       "/work/estate-in-palma-de-mallorca-spain/still02.png",
