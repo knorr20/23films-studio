@@ -72,14 +72,16 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
           <div className="mt-12 max-w-3xl">
             <p className="text-caption mb-4">
-              {[project.client, PROJECT_CATEGORY_LABELS[project.category]]
-                .filter(Boolean)
-                .join(" · ")}
+              {project.client
+                ? [project.client, PROJECT_CATEGORY_LABELS[project.category]]
+                    .filter(Boolean)
+                    .join(" · ")
+                : project.subtitle}
             </p>
             <h1 className="font-display text-4xl text-display text-text md:text-6xl">
               {project.title}
             </h1>
-            {project.subtitle && (
+            {project.subtitle && project.client && (
               <p className="mt-4 text-lg text-text-muted">{project.subtitle}</p>
             )}
             <p className="text-display mt-8 max-w-xl text-sm leading-relaxed tracking-[0.08em] text-text-muted">

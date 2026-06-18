@@ -175,15 +175,15 @@ export const projects: Project[] = [
   {
     slug: "soda-please",
     title: "Soda Please",
+    subtitle: "Original Soda Please · Teaser",
     category: "commercial",
-    client: "Soda Please",
     vimeoId: "1126304129",
     thumbnail: "/work/soda-please/sodaplease1.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/soda-4sec.mp4",
     featured: false,
     description:
-      "COMMERCIAL FOR SODA PLEASE — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/soda-please/sodaplease1.png",
       "/work/soda-please/sodaplease2.png",
