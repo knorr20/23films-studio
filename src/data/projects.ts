@@ -153,7 +153,7 @@ export const projects: Project[] = [
   },
   {
     slug: "lucent-out-to-sea",
-    title: "\"Out to Sea\"",
+    title: "Out to Sea",
     category: "commercial",
     client: "Lucent",
     vimeoId: "1202001174",
