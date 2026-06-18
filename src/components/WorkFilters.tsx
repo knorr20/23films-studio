@@ -7,7 +7,6 @@ const filters: { value: ProjectCategory | "all"; label: string }[] = [
   { value: "all", label: "All" },
   { value: "commercial", label: "Commercial" },
   { value: "music-video", label: "Music Video" },
-  { value: "campaign", label: "Campaign" },
   { value: "narrative", label: "Narrative" },
 ];
 
