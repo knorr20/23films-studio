@@ -99,13 +99,19 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Engel & Völkers",
     vimeoId: "1202300317",
-    thumbnail:
-      "/work/new-video-for-nuvola-capitanio.png",
+    thumbnail: "/work/new-video-for-nuvola-capitanio/still01.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/2024-07-14-06.33.35.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR ENGEL & VÖLKERS — LONDON'S MOST DISTINCTIVE PENTHOUSE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/new-video-for-nuvola-capitanio/still01.png",
+      "/work/new-video-for-nuvola-capitanio/still02.png",
+      "/work/new-video-for-nuvola-capitanio/still03.png",
+      "/work/new-video-for-nuvola-capitanio/still04.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "ben-pakulski",
