@@ -79,7 +79,7 @@ export const projects: Project[] = [
     slug: "estate-in-palma-de-mallorca-spain",
     title: "Malerca Estate",
     category: "commercial",
-    client: "Nuvola Capitanio",
+    client: "Engel & Völkers",
     vimeoId: "1202300697",
     thumbnail:
       "/work/estate-in-palma-de-mallorca-spain.png",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5282.mp4",
     featured: true,
     description:
-      "COMMERCIAL FOR NUVOLO CAPITANIO — MALERCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR ENGEL & VÖLKERS — MALERCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/estate-in-palma-de-mallorca-spain/still01.png",
       "/work/estate-in-palma-de-mallorca-spain/still02.png",
@@ -99,9 +99,8 @@ export const projects: Project[] = [
   {
     slug: "new-video-for-nuvola-capitanio",
     title: "London's Most Unique Penthouse",
-    subtitle: "New video for Nuvola Capitanio",
     category: "commercial",
-    client: "Nuvola Capitanio",
+    client: "Engel & Völkers",
     vimeoId: "1202300317",
     thumbnail:
       "/work/new-video-for-nuvola-capitanio.png",
@@ -109,7 +108,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/2024-07-14-06.33.35.mp4",
     featured: true,
     description:
-      "International real estate storytelling for one of London's most distinctive penthouse properties.",
+      "COMMERCIAL FOR ENGEL & VÖLKERS — LONDON'S MOST DISTINCTIVE PENTHOUSE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
   },
   {
     slug: "ben-pakulski",
