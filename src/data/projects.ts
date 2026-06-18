@@ -138,7 +138,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Sam Asghari",
     vimeoId: "1126304067",
-    thumbnail: "/work/sam-asghari-forge.jpg",
+    thumbnail: "/work/sam-asghari-forge/vimeo-poster.jpg",
     featured: false,
     description:
       "BRAND FILM FOR SAM ASGHARI — BOXING RINGS, DESERT GRIND, GOLDEN HOUR TRAINING, AND RAW ATHLETIC POWER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
