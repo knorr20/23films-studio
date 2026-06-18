@@ -130,6 +130,18 @@ export const projects: Project[] = [
     stillsFit: "contain",
   },
   {
+    slug: "artbat-braev-humans",
+    title: "ARTBAT ft. Braev — Humans",
+    subtitle: "Official Music Video",
+    category: "music-video",
+    client: "ARTBAT",
+    vimeoId: "1126297949",
+    thumbnail: "/work/artbat-braev-humans.jpg",
+    featured: false,
+    description:
+      "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+  },
+  {
     slug: "growerev",
     title: "GroweRev",
     category: "commercial",
