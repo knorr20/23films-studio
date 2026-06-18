@@ -70,8 +70,6 @@ export const projects: Project[] = [
       "/work/lamborghini-aventador/still01.png",
       "/work/lamborghini-aventador/still02.png",
       "/work/lamborghini-aventador/still03.png",
-      "/work/lamborghini-aventador/still04.png",
-      "/work/lamborghini-aventador/still05.png",
     ],
     stillsFit: "contain",
   },
