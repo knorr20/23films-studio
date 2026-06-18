@@ -209,6 +209,8 @@ export const projects: Project[] = [
     featured: false,
     description:
       "BRAND CAMPAIGN FOR LUCENT — YACHT LIFE, COASTAL GOLDEN HOUR, AND EDITORIAL EASE ON THE OPEN WATER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/lucent-out-to-sea/still01.png",
       "/work/lucent-out-to-sea/still02.png",
       "/work/lucent-out-to-sea/still03.png",
       "/work/lucent-out-to-sea/still04.png",
@@ -227,6 +229,8 @@ export const projects: Project[] = [
     featured: false,
     description:
       "BRAND CAMPAIGN FOR LUCENT — EDITORIAL PORTRAITS, LUXURY FASHION, AND THE ENERGY OF ARRIVAL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/lucent-show-up/still01.png",
       "/work/lucent-show-up/still02.png",
       "/work/lucent-show-up/still03.png",
       "/work/lucent-show-up/still04.png",
@@ -245,6 +249,8 @@ export const projects: Project[] = [
     featured: false,
     description:
       "BRAND CAMPAIGN FOR LUCENT — VINTAGE CALIFORNIA, FILM GRAIN, AND ROMANCE CAPTURED FRAME BY FRAME. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/lucent-frame-by-frame/still01.png",
       "/work/lucent-frame-by-frame/still02.png",
       "/work/lucent-frame-by-frame/still03.png",
       "/work/lucent-frame-by-frame/still04.png",
