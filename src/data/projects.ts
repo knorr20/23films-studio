@@ -323,6 +323,7 @@ export const projects: Project[] = [
     slug: "who-i-am",
     title: "Who Am I?",
     category: "narrative",
+    client: "Original",
     vimeoId: "1202299048",
     thumbnail: "/work/who-i-am.webp",
     previewVideo:
