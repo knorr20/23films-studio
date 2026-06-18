@@ -79,8 +79,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Engel & Völkers",
     vimeoId: "1202300697",
-    thumbnail:
-      "/work/estate-in-palma-de-mallorca-spain.png",
+    thumbnail: "/work/estate-in-palma-de-mallorca-spain/still01.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5282.mp4",
     featured: true,
@@ -91,8 +90,8 @@ export const projects: Project[] = [
       "/work/estate-in-palma-de-mallorca-spain/still02.png",
       "/work/estate-in-palma-de-mallorca-spain/still03.png",
       "/work/estate-in-palma-de-mallorca-spain/still04.png",
-      "/work/estate-in-palma-de-mallorca-spain/still05.png",
     ],
+    stillsFit: "contain",
   },
   {
     slug: "new-video-for-nuvola-capitanio",
