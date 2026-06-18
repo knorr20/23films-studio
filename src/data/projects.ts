@@ -66,7 +66,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_5279-1.mp4",
     featured: true,
     description:
-      "COMMERCIAL FOR LAMBORGHINI AVENTADOR — DRAMATIC LIGHT, OPEN ROAD, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR RR AUTO-GROUP — DRAMATIC LIGHT, OPEN ROAD, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/lamborghini-aventador/still01.png",
       "/work/lamborghini-aventador/still02.png",
