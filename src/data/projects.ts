@@ -74,7 +74,7 @@ export const projects: Project[] = [
     subtitle: "$45,000,000 Estate by Nuvola Capitanio",
     category: "commercial",
     client: "Nuvola Capitanio",
-    vimeoId: "955623164",
+    vimeoId: "1202300697",
     thumbnail:
       "/work/estate-in-palma-de-mallorca-spain.png",
     previewVideo:
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     subtitle: "New video for Nuvola Capitanio",
     category: "commercial",
     client: "Nuvola Capitanio",
-    vimeoId: "947169018",
+    vimeoId: "1202300317",
     thumbnail:
       "/work/new-video-for-nuvola-capitanio.png",
     previewVideo:
@@ -199,7 +199,7 @@ export const projects: Project[] = [
     title: "Soda Please II",
     subtitle: "Teaser",
     category: "commercial",
-    vimeoId: "826808018",
+    vimeoId: "1202300493",
     thumbnail:
       "/work/soda-please-ii-teaser.webp",
     featured: false,
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     slug: "who-i-am",
     title: "Who Am I?",
     category: "narrative",
-    vimeoId: "885891560",
+    vimeoId: "1202299048",
     thumbnail:
       "/work/who-i-am.webp",
     previewVideo:
