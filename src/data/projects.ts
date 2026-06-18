@@ -141,6 +141,17 @@ export const projects: Project[] = [
       "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
   },
   {
+    slug: "morten-artbat-culture",
+    title: "MORTEN & ARTBAT — \"Culture\"",
+    category: "music-video",
+    client: "ARTBAT",
+    vimeoId: "1126295526",
+    thumbnail: "/work/morten-artbat-culture.jpg",
+    featured: false,
+    description:
+      "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+  },
+  {
     slug: "growerev",
     title: "GroweRev",
     category: "commercial",
