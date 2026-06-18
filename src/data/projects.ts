@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
     description:
-      "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION.",
+      "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/porsche-gt3/still01.png",
       "/work/porsche-gt3/still02.png",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     thumbnail: "/work/ben-pakulski/still01.webp",
     featured: true,
     description:
-      "Fitness and personal brand content with dynamic pacing and strong visual identity.",
+      "Fitness and personal brand content with dynamic pacing and strong visual identity. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/ben-pakulski/still01.webp",
       "/work/ben-pakulski/still02.webp",
@@ -191,7 +191,8 @@ export const projects: Project[] = [
     vimeoId: "1202001868",
     thumbnail: "/work/growerev/still01.webp",
     featured: false,
-    description: "Brand film with editorial pacing and product-focused visuals.",
+    description:
+      "Brand film with editorial pacing and product-focused visuals. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/growerev/still01.webp",
       "/work/growerev/still02.webp",
@@ -253,7 +254,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
     description:
-      "Commercial production for Upholstery Inc. with cinematic automotive detailing.",
+      "Commercial production for Upholstery Inc. with cinematic automotive detailing. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/new-video-for-upholstery-inc/still01.jpg",
       "/work/new-video-for-upholstery-inc/still02.webp",
@@ -271,7 +272,7 @@ export const projects: Project[] = [
     thumbnail: "/work/aston-martin-vantage-v12/still01.webp",
     featured: false,
     description:
-      "Automotive film emphasizing lines, power, and luxury craftsmanship.",
+      "Automotive film emphasizing lines, power, and luxury craftsmanship. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/aston-martin-vantage-v12/still01.webp",
       "/work/aston-martin-vantage-v12/still02.webp",
@@ -306,7 +307,8 @@ export const projects: Project[] = [
     vimeoId: "1202001984",
     thumbnail: "/work/mandi-holding/still01.jpg",
     featured: false,
-    description: "Corporate and portrait photography for Mandi Holding.",
+    description:
+      "Corporate and portrait photography for Mandi Holding. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/mandi-holding/still01.jpg",
       "/work/mandi-holding/still02.webp",
@@ -325,7 +327,7 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
     featured: false,
     description:
-      "A cinematic character piece built around mood, performance, and intimate framing.",
+      "A cinematic character piece built around mood, performance, and intimate framing. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/who-i-am/still01.webp",
       "/work/who-i-am/still02.webp",
