@@ -162,6 +162,18 @@ export const projects: Project[] = [
     featured: false,
     description:
       "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/artbat-braev-humans/still01.png",
+      "/work/artbat-braev-humans/still02.png",
+      "/work/artbat-braev-humans/still03.png",
+      "/work/artbat-braev-humans/still04.png",
+      "/work/artbat-braev-humans/still05.png",
+      "/work/artbat-braev-humans/still06.png",
+      "/work/artbat-braev-humans/still07.png",
+      "/work/artbat-braev-humans/still08.png",
+      "/work/artbat-braev-humans/still09.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "morten-artbat-culture",
