@@ -201,8 +201,8 @@ export const projects: Project[] = [
   {
     slug: "muscle-intelligence",
     title: "Muscle Intelligence",
-    subtitle: "Muscle Intelligence Camp in Spain",
     category: "commercial",
+    client: "Ben Pakulski",
     vimeoId: "1202001871",
     thumbnail:
       "/work/muscle-intelligence.png",
@@ -210,7 +210,21 @@ export const projects: Project[] = [
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
     description:
-      "Event coverage and brand film capturing training, energy, and community on location in Spain.",
+      "FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/muscle-intelligence/still01.png",
+      "/work/muscle-intelligence/still02.png",
+      "/work/muscle-intelligence/still03.png",
+      "/work/muscle-intelligence/still04.png",
+      "/work/muscle-intelligence/still05.png",
+      "/work/muscle-intelligence/still06.png",
+      "/work/muscle-intelligence/still07.png",
+      "/work/muscle-intelligence/still08.png",
+      "/work/muscle-intelligence/still09.png",
+      "/work/muscle-intelligence/still10.png",
+      "/work/muscle-intelligence/still11.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "new-video-for-upholstery-inc",
