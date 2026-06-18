@@ -303,13 +303,14 @@ export const projects: Project[] = [
   },
   {
     slug: "mandi-holding",
-    title: "Mandi Holding",
+    title: "Mardi Holding",
     category: "commercial",
+    client: "Mardi Holding",
     vimeoId: "1202001984",
     thumbnail: "/work/mandi-holding.jpg",
     featured: false,
     description:
-      "Corporate and portrait photography for Mandi Holding. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND FILM FOR MARDI HOLDING — AERIAL VIEWS OF PROPERTIES, DEVELOPMENT, AND INFOGRAPHIC STORYTELLING. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/mandi-holding/still01.jpg",
       "/work/mandi-holding/still02.webp",
