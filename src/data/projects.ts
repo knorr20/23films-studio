@@ -175,16 +175,26 @@ export const projects: Project[] = [
   {
     slug: "soda-please",
     title: "Soda Please",
-    subtitle: "Fizzy Obsession: A Bitter Twist",
     category: "commercial",
+    client: "Soda Please",
     vimeoId: "1126304129",
-    thumbnail:
-      "/work/soda-please.webp",
+    thumbnail: "/work/soda-please/sodaplease1.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/soda-4sec.mp4",
     featured: false,
     description:
-      "Branded content with bold visual rhythm and stylized product storytelling.",
+      "COMMERCIAL FOR SODA PLEASE — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/soda-please/sodaplease1.png",
+      "/work/soda-please/sodaplease2.png",
+      "/work/soda-please/sodaplease3.png",
+      "/work/soda-please/sodaplease4.png",
+      "/work/soda-please/sodaplease5.png",
+      "/work/soda-please/sodaplease6.png",
+      "/work/soda-please/sodaplease7.png",
+      "/work/soda-please/sodaplease8.png",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "muscle-intelligence",
