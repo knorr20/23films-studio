@@ -40,19 +40,19 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Porsche",
     vimeoId: "1126302394",
-    thumbnail: "/work/porsche-gt3/still-01.png",
+    thumbnail: "/work/porsche-gt3/still01.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION.",
     stills: [
-      "/work/porsche-gt3/still-01.png",
-      "/work/porsche-gt3/still-04.png",
-      "/work/porsche-gt3/still-03.png",
-      "/work/porsche-gt3/still-02.png",
-      "/work/porsche-gt3/still-05.png",
+      "/work/porsche-gt3/still01.jpg",
+      "/work/porsche-gt3/still02.jpg",
+      "/work/porsche-gt3/still03.jpg",
+      "/work/porsche-gt3/still04.jpg",
     ],
+    stillsFit: "contain",
   },
   {
     slug: "lamborghini-aventador",
