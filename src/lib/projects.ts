@@ -34,5 +34,5 @@ export function getAllProjectSlugs(): string[] {
 }
 
 export function formatProjectMeta(project: Project): string {
-  return project.client ?? project.subtitle ?? "";
+  return project.cardMeta ?? project.client ?? project.subtitle ?? "";
 }

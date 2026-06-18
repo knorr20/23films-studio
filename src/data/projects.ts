@@ -18,6 +18,7 @@ export interface Project {
   subtitle?: string;
   category: ProjectCategory;
   client?: string;
+  cardMeta?: string;
   vimeoId: string;
   thumbnail: string;
   previewVideo?: string;
@@ -176,6 +177,7 @@ export const projects: Project[] = [
     slug: "soda-please",
     title: "Soda Please",
     subtitle: "Original Soda Please · Teaser",
+    cardMeta: "Original",
     category: "commercial",
     vimeoId: "1126304129",
     thumbnail: "/work/soda-please/sodaplease1.png",
