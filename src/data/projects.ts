@@ -1,15 +1,17 @@
-export type ProjectCategory = "commercial" | "music-video" | "narrative";
+export type ProjectCategory = "commercial" | "music-video" | "narrative" | "campaign";
 
 export const PROJECT_CATEGORY_LABELS: Record<ProjectCategory, string> = {
   commercial: "Commercial",
   "music-video": "Music Video",
   narrative: "Narrative",
+  campaign: "Campaign",
 };
 
 export const PROJECT_CATEGORIES: ProjectCategory[] = [
   "commercial",
   "music-video",
   "narrative",
+  "campaign",
 ];
 
 export interface Project {
@@ -150,6 +152,17 @@ export const projects: Project[] = [
     featured: false,
     description:
       "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+  },
+  {
+    slug: "lucent-out-to-sea",
+    title: "\"Out to Sea\"",
+    category: "campaign",
+    client: "Lucent",
+    vimeoId: "1202001174",
+    thumbnail: "/work/lucent-out-to-sea.jpg",
+    featured: false,
+    description:
+      "BRAND CAMPAIGN — FULL PRODUCTION BY 23 FILMS.",
   },
   {
     slug: "growerev",
