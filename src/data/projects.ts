@@ -131,8 +131,7 @@ export const projects: Project[] = [
   },
   {
     slug: "artbat-braev-humans",
-    title: "ARTBAT ft. Braev — Humans",
-    subtitle: "Official Music Video",
+    title: "ARTBAT ft. Braev — \"Humans\"",
     category: "music-video",
     client: "ARTBAT",
     vimeoId: "1126297949",
