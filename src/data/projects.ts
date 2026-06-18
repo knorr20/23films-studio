@@ -40,17 +40,18 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Porsche",
     vimeoId: "1126302394",
-    thumbnail: "/work/porsche-gt3/still01.jpg",
+    thumbnail: "/work/porsche-gt3/still01.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION.",
     stills: [
-      "/work/porsche-gt3/still01.jpg",
-      "/work/porsche-gt3/still02.jpg",
-      "/work/porsche-gt3/still03.jpg",
-      "/work/porsche-gt3/still04.jpg",
+      "/work/porsche-gt3/still01.png",
+      "/work/porsche-gt3/still02.png",
+      "/work/porsche-gt3/still03.png",
+      "/work/porsche-gt3/still04.png",
+      "/work/porsche-gt3/still05.png",
     ],
     stillsFit: "contain",
   },
@@ -118,11 +119,17 @@ export const projects: Project[] = [
     title: "Ben Pakulski",
     category: "commercial",
     vimeoId: "1202001870",
-    thumbnail:
-      "/work/ben-pakulski.webp",
+    thumbnail: "/work/ben-pakulski/still01.webp",
     featured: true,
     description:
       "Fitness and personal brand content with dynamic pacing and strong visual identity.",
+    stills: [
+      "/work/ben-pakulski/still01.webp",
+      "/work/ben-pakulski/still02.webp",
+      "/work/ben-pakulski/still03.webp",
+      "/work/ben-pakulski/still04.webp",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "morten-artbat-hollow",
@@ -182,10 +189,16 @@ export const projects: Project[] = [
     title: "GroweRev",
     category: "commercial",
     vimeoId: "1202001868",
-    thumbnail:
-      "/work/growerev.webp",
+    thumbnail: "/work/growerev/still01.webp",
     featured: false,
     description: "Brand film with editorial pacing and product-focused visuals.",
+    stills: [
+      "/work/growerev/still01.webp",
+      "/work/growerev/still02.webp",
+      "/work/growerev/still03.webp",
+      "/work/growerev/still04.webp",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "soda-please",
@@ -201,14 +214,10 @@ export const projects: Project[] = [
     description:
       "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
-      "/work/soda-please/sodaplease1.png",
-      "/work/soda-please/sodaplease2.png",
-      "/work/soda-please/sodaplease3.png",
-      "/work/soda-please/sodaplease4.png",
-      "/work/soda-please/sodaplease5.png",
-      "/work/soda-please/sodaplease6.png",
-      "/work/soda-please/sodaplease7.png",
-      "/work/soda-please/sodaplease8.png",
+      "/work/soda-please/still01.webp",
+      "/work/soda-please/still02.webp",
+      "/work/soda-please/still03.webp",
+      "/work/soda-please/still04.webp",
     ],
     stillsFit: "contain",
   },
@@ -218,8 +227,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Ben Pakulski",
     vimeoId: "1202001871",
-    thumbnail:
-      "/work/muscle-intelligence.png",
+    thumbnail: "/work/muscle-intelligence/still01.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
@@ -230,13 +238,6 @@ export const projects: Project[] = [
       "/work/muscle-intelligence/still02.png",
       "/work/muscle-intelligence/still03.png",
       "/work/muscle-intelligence/still04.png",
-      "/work/muscle-intelligence/still05.png",
-      "/work/muscle-intelligence/still06.png",
-      "/work/muscle-intelligence/still07.png",
-      "/work/muscle-intelligence/still08.png",
-      "/work/muscle-intelligence/still09.png",
-      "/work/muscle-intelligence/still10.png",
-      "/work/muscle-intelligence/still11.png",
     ],
     stillsFit: "contain",
   },
@@ -247,13 +248,19 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Upholstery Inc.",
     vimeoId: "1126299379",
-    thumbnail:
-      "/work/new-video-for-upholstery-inc.jpg",
+    thumbnail: "/work/new-video-for-upholstery-inc/still01.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
     description:
       "Commercial production for Upholstery Inc. with cinematic automotive detailing.",
+    stills: [
+      "/work/new-video-for-upholstery-inc/still01.jpg",
+      "/work/new-video-for-upholstery-inc/still02.webp",
+      "/work/new-video-for-upholstery-inc/still03.webp",
+      "/work/new-video-for-upholstery-inc/still04.webp",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "aston-martin-vantage-v12",
@@ -261,11 +268,17 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Aston Martin",
     vimeoId: "1126296330",
-    thumbnail:
-      "/work/aston-martin-vantage-v12.webp",
+    thumbnail: "/work/aston-martin-vantage-v12/still01.webp",
     featured: false,
     description:
       "Automotive film emphasizing lines, power, and luxury craftsmanship.",
+    stills: [
+      "/work/aston-martin-vantage-v12/still01.webp",
+      "/work/aston-martin-vantage-v12/still02.webp",
+      "/work/aston-martin-vantage-v12/still03.webp",
+      "/work/aston-martin-vantage-v12/still04.webp",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "soda-please-ii-teaser",
@@ -274,33 +287,51 @@ export const projects: Project[] = [
     cardMeta: "Original",
     category: "narrative",
     vimeoId: "1202300493",
-    thumbnail:
-      "/work/soda-please-ii-teaser.webp",
+    thumbnail: "/work/soda-please-ii-teaser/still01.webp",
     featured: false,
     description:
       "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/soda-please-ii-teaser/still01.webp",
+      "/work/soda-please-ii-teaser/still02.webp",
+      "/work/soda-please-ii-teaser/still03.webp",
+      "/work/soda-please-ii-teaser/still04.webp",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "mandi-holding",
     title: "Mandi Holding",
     category: "commercial",
     vimeoId: "1202001984",
-    thumbnail:
-      "/work/mandi-holding.jpg",
+    thumbnail: "/work/mandi-holding/still01.jpg",
     featured: false,
     description: "Corporate and portrait photography for Mandi Holding.",
+    stills: [
+      "/work/mandi-holding/still01.jpg",
+      "/work/mandi-holding/still02.webp",
+      "/work/mandi-holding/still03.webp",
+      "/work/mandi-holding/still04.webp",
+    ],
+    stillsFit: "contain",
   },
   {
     slug: "who-i-am",
     title: "Who Am I?",
     category: "narrative",
     vimeoId: "1202299048",
-    thumbnail:
-      "/work/who-i-am.webp",
+    thumbnail: "/work/who-i-am/still01.webp",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
     featured: false,
     description:
       "A cinematic character piece built around mood, performance, and intimate framing.",
+    stills: [
+      "/work/who-i-am/still01.webp",
+      "/work/who-i-am/still02.webp",
+      "/work/who-i-am/still03.webp",
+      "/work/who-i-am/still04.webp",
+    ],
+    stillsFit: "contain",
   },
 ];
