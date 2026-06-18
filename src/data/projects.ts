@@ -178,7 +178,7 @@ export const projects: Project[] = [
     title: "Soda Please",
     subtitle: "Original Soda Please · Teaser",
     cardMeta: "Original",
-    category: "commercial",
+    category: "narrative",
     vimeoId: "1126304129",
     thumbnail: "/work/soda-please.jpg",
     previewVideo:
@@ -242,13 +242,15 @@ export const projects: Project[] = [
   {
     slug: "soda-please-ii-teaser",
     title: "Soda Please II",
-    subtitle: "Teaser",
-    category: "commercial",
+    subtitle: "Original Soda Please II · Teaser",
+    cardMeta: "Original",
+    category: "narrative",
     vimeoId: "1202300493",
     thumbnail:
       "/work/soda-please-ii-teaser.webp",
     featured: false,
-    description: "Teaser cut for the Soda Please campaign sequel.",
+    description:
+      "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
   },
   {
     slug: "mandi-holding",
