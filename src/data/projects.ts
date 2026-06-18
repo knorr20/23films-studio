@@ -133,6 +133,26 @@ export const projects: Project[] = [
     stillsFit: "contain",
   },
   {
+    slug: "sam-asghari-forge",
+    title: "Forge",
+    category: "commercial",
+    client: "Sam Asghari",
+    vimeoId: "1126304067",
+    thumbnail: "/work/sam-asghari-forge.jpg",
+    featured: false,
+    description:
+      "BRAND FILM FOR SAM ASGHARI — BOXING RINGS, DESERT GRIND, GOLDEN HOUR TRAINING, AND RAW ATHLETIC POWER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/sam-asghari-forge/still01.png",
+      "/work/sam-asghari-forge/still02.png",
+      "/work/sam-asghari-forge/still03.png",
+      "/work/sam-asghari-forge/still04.png",
+      "/work/sam-asghari-forge/still05.png",
+      "/work/sam-asghari-forge/still06.png",
+    ],
+    stillsFit: "contain",
+  },
+  {
     slug: "morten-artbat-hollow",
     title: "MORTEN & ARTBAT ft. Bonn — \"Hollow\"",
     category: "music-video",
