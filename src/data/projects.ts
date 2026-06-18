@@ -278,7 +278,7 @@ export const projects: Project[] = [
       "/work/aston-martin-vantage-v12/still01.webp",
       "/work/aston-martin-vantage-v12/still02.webp",
       "/work/aston-martin-vantage-v12/still03.webp",
-      "/work/aston-martin-vantage-v12/still04.webp",
+      "/work/aston-martin-vantage-v12/still04.png",
     ],
     stillsFit: "contain",
   },
