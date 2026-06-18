@@ -187,13 +187,14 @@ export const projects: Project[] = [
   },
   {
     slug: "growerev",
-    title: "GroweRev",
+    title: "GroweRev Brand Film",
     category: "commercial",
+    client: "GroweRev",
     vimeoId: "1202001868",
     thumbnail: "/work/growerev.webp",
     featured: false,
     description:
-      "Brand film with editorial pacing and product-focused visuals. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND FILM FOR GROWEREV — EDITORIAL PACING AND PRODUCT-FOCUSED VISUALS. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/growerev/still01.webp",
       "/work/growerev/still02.webp",
