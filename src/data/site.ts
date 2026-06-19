@@ -22,11 +22,10 @@ export const siteConfig = {
 };
 
 export const aboutParagraphs = [
-  "We are a top-tier, exclusive video production company with over 20 years of global experience, bringing even the most outrageous ideas to life. The quality of our work is only comparable to big production studios like Netflix, and all of it at a reasonable price tag. Our experience in a global market allows us to push beyond the norms and bring fresh ideas and perspectives to North America.",
-  "At 23 Production, we value the excellence and uniqueness of every brand we work with. That's why we approach each project individually and design every video to reflect the brand's identity, voice and core values. Starting from the initial concept, we work alongside you and your team to ensure that every component of your video portrays your brand in its unrepeatable way.",
-  "Our team of A-list players and masters of their craft understand that not only the visual aspect of a video is important but also its results. Whether the objective is to acquire customers organically or through paid traffic, our team will optimize and design your video accordingly.",
-  "Our extensive knowledge of YouTube, TikTok, Instagram and LinkedIn allows us to tailor each video based on the social media platform a video will be released. Every video is meticulously planned and designed to hook your viewer's attention and to retain it for as long as possible.",
-  "We specialize in vast video formats, including YouTube videos, direct response ads, virtual sales letters, brand awareness videos, short films, documentaries, event coverage, music video clips, social media content and more. No matter the scale of your needs and objectives, we have the experience and resources to bring even the craziest ideas to life.",
+  "23 Films is a video production studio based in North Hollywood, Los Angeles. We work end to end, handling concept, production, and post across commercial, corporate, automotive, branded content, music videos, real estate, podcasts, and photography.",
+  "Our work ranges from campaigns for premium automotive brands to official music videos for ARTBAT, plus a feature film that premiered at the Cannes Film Festival 2025. We bring the same standard to every project, whatever the scale.",
+  "The studio runs its own production space, available for shoots and rental, giving full control over the process from first frame to final cut.",
+  "Based in North Hollywood. Working across Greater Los Angeles and beyond.",
 ];
 
 export const contactIntro = [
