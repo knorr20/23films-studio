@@ -5,7 +5,7 @@ import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Full-service video production, podcasts, BTS, post-production, photo sessions, and retouching.",
+    "Commercial, corporate, music video, real estate, podcast, photography, and studio rental in North Hollywood.",
 };
 
 export default function ServicesPage() {
@@ -19,8 +19,9 @@ export default function ServicesPage() {
               Services
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-text-muted">
-              From concept to final delivery — commercial production built for
-              brands that need cinematic quality and measurable results.
+              End-to-end production across commercial, corporate, music,
+              real estate, podcasts, and photography — from concept to final
+              delivery.
             </p>
           </ScrollReveal>
 

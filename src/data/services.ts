@@ -5,33 +5,38 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Full-Service Video Production",
+    title: "Commercial & Brand",
     description:
-      "End-to-end commercial production — concept, scripting, filming, and delivery for brands that need cinematic quality at scale.",
+      "Concept-driven films for brands and products. From premium automotive to consumer campaigns, built to carry a brand's character on screen.",
   },
   {
-    title: "Filming of Streams and Podcasts",
+    title: "Corporate",
     description:
-      "Multi-camera setups, professional lighting, and broadcast-ready capture for podcasts, live streams, and long-form content.",
+      "Video for companies that need to communicate clearly: brand films, internal content, training, event coverage, and founder stories.",
   },
   {
-    title: "Behind the Scenes",
+    title: "Music Videos",
     description:
-      "On-set documentation and BTS content that extends your campaign across social channels and builds audience connection.",
+      "Full production for artists and labels, from treatment to final grade. Official videos for international acts.",
   },
   {
-    title: "Video Post-Production",
+    title: "Real Estate",
     description:
-      "Editing, color grading, sound design, and finishing — polished delivery optimized for every platform.",
+      "Cinematic property films for luxury listings and developments. Architecture, space, and the feeling of a place.",
   },
   {
-    title: "Photo Sessions",
+    title: "Podcasts",
     description:
-      "Studio and on-location photography for campaigns, product launches, portraits, and editorial content.",
+      "Multi-camera podcast production in studio, from setup to edited episodes ready to publish.",
   },
   {
-    title: "Photo Retouching",
+    title: "Photography",
     description:
-      "High-end retouching and compositing that matches the visual standard of our film work.",
+      "Commercial and brand photography: product, portrait, and campaign work, shot in studio or on location.",
+  },
+  {
+    title: "Studio Rental",
+    description:
+      "A fully equipped production space in North Hollywood, available for shoots, photography, and podcast recording.",
   },
 ];
