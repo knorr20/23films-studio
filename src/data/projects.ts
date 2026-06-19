@@ -285,7 +285,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "GroweRev",
     vimeoId: "1202299049",
-    thumbnail: "/work/growerev.webp",
+    thumbnail: "/work/growerev/vimeo-poster.jpg",
     featured: false,
     description:
       "BRAND FILM FOR GROWEREV — EDITORIAL PACING AND PRODUCT-FOCUSED VISUALS. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -294,6 +294,9 @@ export const projects: Project[] = [
       "/work/growerev/still02.webp",
       "/work/growerev/still03.webp",
       "/work/growerev/still04.webp",
+      "/work/growerev/still05.png",
+      "/work/growerev/still06.png",
+      "/work/growerev/still07.png",
     ],
     stillsFit: "contain",
   },
