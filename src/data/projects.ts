@@ -306,7 +306,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "ANTISCHOOL",
     vimeoId: "1126297224",
-    thumbnail: "/work/antischool-speak-up/vimeo-poster.jpg",
+    thumbnail: "/work/antischool-speak-up/card-thumb.png",
     featured: false,
     description:
       "BRAND FILM FOR ANTISCHOOL — TRAVEL, DISCOVERY, AND THE PATH TO SPEAKING UP. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
