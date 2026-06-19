@@ -468,7 +468,7 @@ export const projects: Project[] = [
     thumbnail: "/work/sandy-aouad-beauty-of-poverty/vimeo-poster.jpg",
     featured: false,
     description:
-      "FEATURE FILM BY SANDY AOUAD — PREMIERED AT CANNES 2025. DIRECTED AND PRODUCED BY 23 FILMS.",
+      "FEATURE FILM BY SANDY AOUAD — PREMIERED AT CANNES 2025. STREAMING ON AMAZON PRIME. DIRECTED AND PRODUCED BY 23 FILMS.",
     stills: [
       "/work/sandy-aouad-beauty-of-poverty/still01.png",
       "/work/sandy-aouad-beauty-of-poverty/still02.png",
