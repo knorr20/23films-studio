@@ -49,9 +49,27 @@ const wordpressRedirects = [
   { source: "/photo/:path*", destination: "/work", permanent: true },
 ];
 
+const legacyHosts = [
+  "www.23films.studio",
+  "23production.ca",
+  "www.23production.ca",
+];
+
+const hostRedirects = legacyHosts.map((host) => ({
+  source: "/:path*",
+  has: [{ type: "host", value: host }],
+  destination: "https://23films.studio/:path*",
+  permanent: true,
+}));
+
 const nextConfig: NextConfig = {
   async redirects() {
-    return [...wordpressRedirects, ...legacyRedirects, ...projectRedirects];
+    return [
+      ...hostRedirects,
+      ...wordpressRedirects,
+      ...legacyRedirects,
+      ...projectRedirects,
+    ];
   },
 };
 

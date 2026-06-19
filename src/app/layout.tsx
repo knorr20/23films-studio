@@ -20,6 +20,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   ...createPageMetadata(pageSeo.home),
+  manifest: "/manifest.json",
+  themeColor: "#0a0a0a",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",

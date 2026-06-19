@@ -1,0 +1,16 @@
+{
+  "name": "23 Films",
+  "short_name": "23 Films",
+  "description": "Video production studio in North Hollywood, Los Angeles.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
