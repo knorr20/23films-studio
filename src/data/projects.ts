@@ -284,7 +284,7 @@ export const projects: Project[] = [
     title: "GroweRev Brand Film",
     category: "commercial",
     client: "GroweRev",
-    vimeoId: "1202001868",
+    vimeoId: "1202299049",
     thumbnail: "/work/growerev.webp",
     featured: false,
     description:
