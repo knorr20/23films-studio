@@ -369,7 +369,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "New Life",
     vimeoId: "1126299379",
-    thumbnail: "/work/new-video-for-upholstery-inc.jpg",
+    thumbnail: "/work/new-video-for-upholstery-inc/vimeo-poster.jpg",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
