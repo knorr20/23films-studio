@@ -408,7 +408,7 @@ export const projects: Project[] = [
     cardMeta: "Original",
     category: "narrative",
     vimeoId: "1202300493",
-    thumbnail: "/work/soda-please-ii-teaser.webp",
+    thumbnail: "/work/soda-please-ii-teaser/vimeo-poster.jpg",
     featured: false,
     description:
       "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
