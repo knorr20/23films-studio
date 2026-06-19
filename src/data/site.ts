@@ -10,6 +10,7 @@ export const siteConfig = {
   phones: ["+1 213 335 9103"],
   phoneLinks: ["+12133359103"],
   address: {
+    street: "10710 Burbank Blvd",
     city: "North Hollywood",
     region: "CA",
     country: "US",

@@ -60,6 +60,13 @@ const organizationJsonLd = {
   telephone: siteConfig.phoneLinks,
   sameAs: [siteConfig.social.instagram],
   description: siteConfig.description,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: siteConfig.address.street,
+    addressLocality: siteConfig.address.city,
+    addressRegion: siteConfig.address.region,
+    addressCountry: siteConfig.address.country,
+  },
 };
 
 export default function RootLayout({

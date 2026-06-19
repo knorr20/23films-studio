@@ -16,8 +16,6 @@ const footerSocial = [
 ];
 
 export function Footer() {
-  const location = `${siteConfig.address.city}, ${siteConfig.address.region}`;
-
   return (
     <footer className="border-t border-border bg-bg">
       <div className="max-content section-padding !pb-12 !pt-16 md:!py-20">
@@ -36,7 +34,11 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-muted">
               {siteConfig.footerNote}
             </p>
-            <p className="text-caption mt-6">{location}</p>
+            <address className="mt-6 max-w-xs text-sm not-italic leading-relaxed text-text-muted">
+              {siteConfig.address.street}
+              <br />
+              {siteConfig.address.city}, {siteConfig.address.region}
+            </address>
           </div>
 
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8 lg:grid-cols-3">
@@ -102,7 +104,12 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="leading-relaxed">
-                  Production space in North Hollywood for shoots and rental.
+                  {siteConfig.address.street}
+                  <br />
+                  {siteConfig.address.city}, {siteConfig.address.region}
+                </li>
+                <li className="leading-relaxed">
+                  Production space for shoots, photography, and podcast recording.
                 </li>
               </ul>
             </div>
