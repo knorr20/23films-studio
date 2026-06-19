@@ -65,6 +65,7 @@ const organizationJsonLd = {
     streetAddress: siteConfig.address.street,
     addressLocality: siteConfig.address.city,
     addressRegion: siteConfig.address.region,
+    postalCode: siteConfig.address.postalCode,
     addressCountry: siteConfig.address.country,
   },
 };

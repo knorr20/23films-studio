@@ -37,7 +37,8 @@ export function Footer() {
             <address className="mt-6 max-w-xs text-sm not-italic leading-relaxed text-text-muted">
               {siteConfig.address.street}
               <br />
-              {siteConfig.address.city}, {siteConfig.address.region}
+              {siteConfig.address.city}, {siteConfig.address.region}{" "}
+              {siteConfig.address.postalCode}
             </address>
           </div>
 
@@ -106,7 +107,8 @@ export function Footer() {
                 <li className="leading-relaxed">
                   {siteConfig.address.street}
                   <br />
-                  {siteConfig.address.city}, {siteConfig.address.region}
+                  {siteConfig.address.city}, {siteConfig.address.region}{" "}
+              {siteConfig.address.postalCode}
                 </li>
                 <li className="leading-relaxed">
                   Production space for shoots, photography, and podcast recording.

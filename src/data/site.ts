@@ -13,6 +13,7 @@ export const siteConfig = {
     street: "10710 Burbank Blvd",
     city: "North Hollywood",
     region: "CA",
+    postalCode: "91601",
     country: "US",
   },
   social: {
