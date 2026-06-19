@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { services } from "@/data/services";
 import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
+import { createPageMetadata, pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "Commercial, corporate, music video, real estate, podcast, photography, and studio rental in North Hollywood.",
-};
+export const metadata: Metadata = createPageMetadata(pageSeo.services);
 
 export default function ServicesPage() {
   return (

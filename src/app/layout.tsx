@@ -3,6 +3,7 @@ import { DM_Sans, Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/data/site";
+import { buildSiteJsonLd, createPageMetadata, pageSeo } from "@/lib/seo";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -18,55 +19,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
-    template: `%s — ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: `${siteConfig.name} — Video Production`,
-    description: siteConfig.description,
-    images: [
-      {
-        url: "/hero/og.jpg",
-        width: 1920,
-        height: 1080,
-        alt: `${siteConfig.name} showreel`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-  },
+  ...createPageMetadata(pageSeo.home),
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
-  },
-};
-
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: siteConfig.name,
-  legalName: siteConfig.legalName,
-  url: siteConfig.url,
-  email: siteConfig.email,
-  telephone: siteConfig.phoneLinks,
-  sameAs: [siteConfig.social.instagram],
-  description: siteConfig.description,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: siteConfig.address.street,
-    addressLocality: siteConfig.address.city,
-    addressRegion: siteConfig.address.region,
-    postalCode: siteConfig.address.postalCode,
-    addressCountry: siteConfig.address.country,
   },
 };
 
@@ -80,7 +36,9 @@ export default function RootLayout({
       <body className="min-h-screen">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildSiteJsonLd()),
+          }}
         />
         <Header />
         <main>{children}</main>

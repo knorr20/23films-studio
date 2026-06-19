@@ -9,12 +9,7 @@ import {
   type ProjectCategory,
 } from "@/data/projects";
 import { getProjectsByCategory } from "@/lib/projects";
-import { siteConfig } from "@/data/site";
-
-export const metadata: Metadata = {
-  title: "Work",
-  description: `Commercial, music video, and narrative work from ${siteConfig.name}.`,
-};
+import { absoluteUrl, createPageMetadata, pageSeo } from "@/lib/seo";
 
 interface WorkPageProps {
   searchParams: Promise<{ category?: string }>;
@@ -25,6 +20,22 @@ function parseCategory(param?: string): ProjectCategory | "all" {
     return param as ProjectCategory;
   }
   return "all";
+}
+
+export async function generateMetadata({
+  searchParams,
+}: WorkPageProps): Promise<Metadata> {
+  const params = await searchParams;
+
+  if (params.category) {
+    return {
+      ...createPageMetadata(pageSeo.work),
+      robots: { index: false, follow: true },
+      alternates: { canonical: absoluteUrl("/work") },
+    };
+  }
+
+  return createPageMetadata(pageSeo.work);
 }
 
 export default async function WorkPage({ searchParams }: WorkPageProps) {

@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { contactIntro, siteConfig } from "@/data/site";
 import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
+import { createPageMetadata, pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: `Contact ${siteConfig.name} for commercial video production inquiries.`,
-};
+export const metadata: Metadata = createPageMetadata(pageSeo.contact);
 
 export default function ContactPage() {
   return (

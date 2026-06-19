@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { aboutParagraphs, siteConfig } from "@/data/site";
 import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
+import { createPageMetadata, pageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About",
-  description: siteConfig.description,
-};
+export const metadata: Metadata = createPageMetadata(pageSeo.about);
 
 export default function AboutPage() {
   return (
@@ -33,10 +31,13 @@ export default function AboutPage() {
 
           <ScrollReveal>
             <div className="mt-16 border-t border-border pt-8">
-              <p className="text-caption mb-2">Location</p>
-              <p className="text-base text-text">
-                {siteConfig.address.city}, {siteConfig.address.region}
-              </p>
+              <p className="text-caption mb-2">Studio</p>
+              <address className="text-base not-italic leading-relaxed text-text">
+                {siteConfig.address.street}
+                <br />
+                {siteConfig.address.city}, {siteConfig.address.region}{" "}
+                {siteConfig.address.postalCode}
+              </address>
             </div>
           </ScrollReveal>
         </div>

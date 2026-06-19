@@ -10,6 +10,13 @@ import {
   getAllProjectSlugs,
   getProjectBySlug,
 } from "@/lib/projects";
+import {
+  buildBreadcrumbJsonLd,
+  buildVideoJsonLd,
+  createPageMetadata,
+  projectPageTitle,
+  projectSeoDescription,
+} from "@/lib/seo";
 
 interface WorkDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -26,15 +33,15 @@ export async function generateMetadata({
   const project = getProjectBySlug(slug);
   if (!project) return {};
 
-  return {
-    title: project.title,
-    description: project.description,
-    openGraph: {
-      title: project.title,
-      description: project.description,
-      images: [{ url: project.thumbnail, width: 1920, height: 1080 }],
-    },
-  };
+  const title = projectPageTitle(project);
+  const description = projectSeoDescription(project);
+
+  return createPageMetadata({
+    title,
+    description,
+    path: `/work/${project.slug}`,
+    ogImage: project.thumbnail,
+  });
 }
 
 export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
@@ -44,27 +51,13 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
   const { prev, next } = getAdjacentProjects(slug);
 
-  const videoJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    name: project.title,
-    description: project.description,
-    thumbnailUrl: project.thumbnail,
-    uploadDate: "2026-01-01",
-    contentUrl: `https://vimeo.com/${project.vimeoId}`,
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      legalName: siteConfig.legalName,
-      url: siteConfig.url,
-    },
-  };
+  const structuredData = [buildVideoJsonLd(project), buildBreadcrumbJsonLd(project)];
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <article className="section-padding pt-32 md:pt-40">

@@ -41,8 +41,6 @@ export const projects: Project[] = [
     client: "RR Auto-Group",
     vimeoId: "1202006049",
     thumbnail: "/work/lamborghini-aventador/vimeo-poster.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2024/07/IMG_5279-1.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR RR AUTO-GROUP — DRAMATIC LIGHT, OPEN ROAD, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -60,8 +58,6 @@ export const projects: Project[] = [
     client: "Engel & Völkers",
     vimeoId: "1202300697",
     thumbnail: "/work/estate-in-palma-de-mallorca-spain/still01.png",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2024/07/IMG_5282.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR ENGEL & VÖLKERS — MALLORCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -80,8 +76,6 @@ export const projects: Project[] = [
     client: "Engel & Völkers",
     vimeoId: "1202300317",
     thumbnail: "/work/new-video-for-nuvola-capitanio/still01.png",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2024/07/2024-07-14-06.33.35.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR ENGEL & VÖLKERS — LONDON'S MOST DISTINCTIVE PENTHOUSE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -225,8 +219,6 @@ export const projects: Project[] = [
     client: "Porsche",
     vimeoId: "1126302394",
     thumbnail: "/work/porsche-gt3/vimeo-poster.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
     featured: true,
     description:
       "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -330,8 +322,6 @@ export const projects: Project[] = [
     category: "narrative",
     vimeoId: "1126304129",
     thumbnail: "/work/soda-please-poster.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2023/12/soda-4sec.mp4",
     featured: false,
     description:
       "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -350,8 +340,6 @@ export const projects: Project[] = [
     client: "Ben Pakulski",
     vimeoId: "1202299046",
     thumbnail: "/work/muscle-intelligence/card-thumb.webp",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
     description:
       "EVENT COVERAGE AND BRAND FILM CAPTURING TRAINING, ENERGY, AND COMMUNITY. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -370,8 +358,6 @@ export const projects: Project[] = [
     client: "New Life",
     vimeoId: "1126299379",
     thumbnail: "/work/new-video-for-upholstery-inc/vimeo-poster.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2023/12/car-4sec-—-youtube.mp4",
     featured: false,
     description:
       "COMMERCIAL FOR NEW LIFE — UPHOLSTERY REIMAGINED WITH CINEMATIC AUTOMOTIVE DETAIL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
@@ -445,8 +431,6 @@ export const projects: Project[] = [
     client: "Original",
     vimeoId: "1202299048",
     thumbnail: "/work/who-i-am.webp",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2023/12/aiza_web.mp4",
     featured: false,
     description:
       "A cinematic character piece built around mood, performance, and intimate framing. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
