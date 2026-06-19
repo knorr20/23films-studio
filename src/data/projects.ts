@@ -35,27 +35,6 @@ export const HERO_VIDEO_SRC = "/hero/hero.mp4";
 
 export const projects: Project[] = [
   {
-    slug: "porsche-gt3",
-    title: "Porsche GT3",
-    category: "commercial",
-    client: "Porsche",
-    vimeoId: "1126302394",
-    thumbnail: "/work/porsche-gt3/vimeo-poster.jpg",
-    previewVideo:
-      "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
-    featured: true,
-    description:
-      "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
-    stills: [
-      "/work/porsche-gt3/still01.png",
-      "/work/porsche-gt3/still02.png",
-      "/work/porsche-gt3/still03.png",
-      "/work/porsche-gt3/still04.png",
-      "/work/porsche-gt3/still05.png",
-    ],
-    stillsFit: "contain",
-  },
-  {
     slug: "lamborghini-aventador",
     title: "Lamborghini Aventador",
     category: "commercial",
@@ -111,6 +90,27 @@ export const projects: Project[] = [
       "/work/new-video-for-nuvola-capitanio/still02.png",
       "/work/new-video-for-nuvola-capitanio/still03.png",
       "/work/new-video-for-nuvola-capitanio/still04.png",
+    ],
+    stillsFit: "contain",
+  },
+  {
+    slug: "porsche-gt3",
+    title: "Porsche GT3",
+    category: "commercial",
+    client: "Porsche",
+    vimeoId: "1126302394",
+    thumbnail: "/work/porsche-gt3/vimeo-poster.jpg",
+    previewVideo:
+      "https://23films.studio/wp-content/uploads/2023/12/Porsche.mp4",
+    featured: true,
+    description:
+      "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/porsche-gt3/still01.png",
+      "/work/porsche-gt3/still02.png",
+      "/work/porsche-gt3/still03.png",
+      "/work/porsche-gt3/still04.png",
+      "/work/porsche-gt3/still05.png",
     ],
     stillsFit: "contain",
   },
