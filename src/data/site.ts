@@ -40,5 +40,4 @@ export const trustedClients = [
   "Lamborghini",
   "Aston Martin",
   "Engel & Völkers",
-  "Upholstery Inc.",
 ];
