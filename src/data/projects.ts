@@ -469,5 +469,16 @@ export const projects: Project[] = [
     featured: false,
     description:
       "FEATURE FILM BY SANDY AOUAD — PREMIERED AT CANNES 2025. DIRECTED AND PRODUCED BY 23 FILMS.",
+    stills: [
+      "/work/sandy-aouad-beauty-of-poverty/still01.png",
+      "/work/sandy-aouad-beauty-of-poverty/still02.png",
+      "/work/sandy-aouad-beauty-of-poverty/still03.png",
+      "/work/sandy-aouad-beauty-of-poverty/still04.png",
+      "/work/sandy-aouad-beauty-of-poverty/still05.png",
+      "/work/sandy-aouad-beauty-of-poverty/still06.png",
+      "/work/sandy-aouad-beauty-of-poverty/still07.png",
+      "/work/sandy-aouad-beauty-of-poverty/still08.png",
+    ],
+    stillsFit: "contain",
   },
 ];
