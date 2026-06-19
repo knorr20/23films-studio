@@ -458,4 +458,16 @@ export const projects: Project[] = [
     ],
     stillsFit: "contain",
   },
+  {
+    slug: "sandy-aouad-beauty-of-poverty",
+    title: "Beauty of Poverty",
+    subtitle: "Feature Film",
+    category: "narrative",
+    client: "Sandy Aouad",
+    vimeoId: "1126297394",
+    thumbnail: "/work/sandy-aouad-beauty-of-poverty/vimeo-poster.jpg",
+    featured: false,
+    description:
+      "FEATURE FILM BY SANDY AOUAD — PREMIERED AT CANNES 2025. DIRECTED AND PRODUCED BY 23 FILMS.",
+  },
 ];
