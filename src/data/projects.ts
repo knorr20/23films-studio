@@ -301,6 +301,28 @@ export const projects: Project[] = [
     stillsFit: "contain",
   },
   {
+    slug: "antischool-speak-up",
+    title: "Speak Up",
+    category: "commercial",
+    client: "ANTISCHOOL",
+    vimeoId: "1126297224",
+    thumbnail: "/work/antischool-speak-up/vimeo-poster.jpg",
+    featured: false,
+    description:
+      "BRAND FILM FOR ANTISCHOOL — TRAVEL, DISCOVERY, AND THE PATH TO SPEAKING UP. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+    stills: [
+      "/work/antischool-speak-up/still01.png",
+      "/work/antischool-speak-up/still02.png",
+      "/work/antischool-speak-up/still03.png",
+      "/work/antischool-speak-up/still04.png",
+      "/work/antischool-speak-up/still05.png",
+      "/work/antischool-speak-up/still06.png",
+      "/work/antischool-speak-up/still07.png",
+      "/work/antischool-speak-up/still08.png",
+    ],
+    stillsFit: "contain",
+  },
+  {
     slug: "soda-please",
     title: "Soda Please",
     subtitle: "Original Soda Please · Teaser",
