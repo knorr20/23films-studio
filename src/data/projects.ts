@@ -158,7 +158,7 @@ export const projects: Project[] = [
     category: "music-video",
     client: "ARTBAT",
     vimeoId: "1126298417",
-    thumbnail: "/work/morten-artbat-hollow/hollowthumb1.png",
+    thumbnail: "/work/morten-artbat-hollow/card-thumb.png",
     featured: false,
     description:
       "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
