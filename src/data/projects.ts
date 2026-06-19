@@ -349,7 +349,7 @@ export const projects: Project[] = [
     category: "commercial",
     client: "Ben Pakulski",
     vimeoId: "1202299046",
-    thumbnail: "/work/muscle-intelligence.png",
+    thumbnail: "/work/muscle-intelligence/card-thumb.webp",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
     featured: false,
