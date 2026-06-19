@@ -34,9 +34,9 @@ export const aboutParagraphs = [
 ];
 
 export const contactIntro = [
-  "Our primary mission is to deliver as much value as possible to everyone looking to elevate their video production. We're here to address any questions you might have about video production — from distribution strategy to the equipment needed to bring your idea to life.",
-  "Video production can be a complex process. Our team will guide you through every step, from concept to final product, ensuring a seamless and enjoyable experience.",
-  "Let's hop on a quick call to see if we are a good fit and explore how we can help share your product with the world. There is no obligation — it's simply an opportunity for us to get to know each other.",
+  "Whatever you're planning, a commercial, a brand film, a music video, or something you haven't fully figured out yet, we're happy to talk it through.",
+  "We handle the whole process in-house, from concept and production to final edit, sound, and color. One team, one studio, start to finish.",
+  "If you have a project in mind, send a note or call. We'll figure out if we're the right fit.",
 ];
 
 export const trustedClients = [
