@@ -348,7 +348,7 @@ export const projects: Project[] = [
     title: "Muscle Intelligence",
     category: "commercial",
     client: "Ben Pakulski",
-    vimeoId: "1202001871",
+    vimeoId: "1202299046",
     thumbnail: "/work/muscle-intelligence.png",
     previewVideo:
       "https://23films.studio/wp-content/uploads/2024/07/IMG_8213.mov",
