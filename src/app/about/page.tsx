@@ -4,8 +4,7 @@ import { ScrollReveal, LineReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "23 Films — video production studio in North Hollywood, Los Angeles. Concept, production, and post for commercial, automotive, music video, and branded content.",
+  description: siteConfig.description,
 };
 
 export default function AboutPage() {

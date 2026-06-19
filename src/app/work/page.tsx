@@ -9,11 +9,11 @@ import {
   type ProjectCategory,
 } from "@/data/projects";
 import { getProjectsByCategory } from "@/lib/projects";
+import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Work",
-  description:
-    "Commercial, music video, and narrative work from 23 Production.",
+  description: `Commercial, music video, and narrative work from ${siteConfig.name}.`,
 };
 
 interface WorkPageProps {

@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "23 Production",
+  name: "23 Films",
   legalName: "23 Production LLC",
   tagline: "Concept · Production · Post",
   description:
-    "Top-tier video production company with over 20 years of global experience. Commercial, automotive, luxury real estate, and branded content.",
+    "Video production studio in North Hollywood, Los Angeles. Concept, production, and post for commercial, automotive, music video, and branded content.",
   url: "https://23films.studio",
   email: "contact@23filming.com",
   phones: ["+1 213 335 9103"],

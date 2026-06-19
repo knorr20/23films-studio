@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { siteConfig } from "@/data/site";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -48,10 +49,10 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:px-12">
-          <Link href="/" className="relative z-50 shrink-0" aria-label="23 Production home">
+          <Link href="/" className="relative z-50 shrink-0" aria-label={`${siteConfig.name} home`}>
             <Image
               src="/logo.png"
-              alt="23 Production"
+              alt={siteConfig.name}
               width={140}
               height={40}
               className="h-10 w-auto"

@@ -54,7 +54,8 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
     contentUrl: `https://vimeo.com/${project.vimeoId}`,
     publisher: {
       "@type": "Organization",
-      name: siteConfig.legalName,
+      name: siteConfig.name,
+      legalName: siteConfig.legalName,
       url: siteConfig.url,
     },
   };
@@ -125,7 +126,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
 
           <p className="mt-12 text-nav">
             <Link href="/contact" className="link-arrow text-text-muted hover:text-text">
-              Start a project with 23 Production →
+              Start a project with {siteConfig.name} →
             </Link>
           </p>
         </div>

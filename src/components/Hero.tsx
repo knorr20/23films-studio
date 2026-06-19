@@ -29,7 +29,7 @@ export function Hero() {
         <div className="max-content w-full px-6 pb-[4.75rem] md:px-12 md:pb-24">
           <div className="animate-[fadeIn_400ms_ease-out]">
             <h1 className="font-display text-[2.125rem] leading-[1.05] text-display text-text sm:text-4xl md:text-7xl lg:text-8xl">
-              23 Production
+              {siteConfig.name}
             </h1>
             <p className="text-caption mt-3 max-w-xs md:mt-4 md:max-w-none">
               {siteConfig.tagline}
