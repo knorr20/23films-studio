@@ -19,6 +19,8 @@ export const siteConfig = {
     whatsapp: "https://wa.me/12133359103",
   },
   studioRentalUrl: "https://23photostudio.com",
+  footerNote:
+    "Full-service production for brands, artists, and filmmakers — from first frame to final cut.",
 };
 
 export const aboutParagraphs = [

@@ -34,7 +34,7 @@ export function Footer() {
             </Link>
             <p className="text-caption mt-6">{siteConfig.tagline}</p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-muted">
-              {siteConfig.description}
+              {siteConfig.footerNote}
             </p>
             <p className="text-caption mt-6">{location}</p>
           </div>
