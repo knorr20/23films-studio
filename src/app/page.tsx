@@ -26,11 +26,6 @@ export default function HomePage() {
                 <h2 className="font-display text-3xl text-display text-text md:text-5xl">
                   Work
                 </h2>
-                <p className="mt-4 max-w-xl text-base leading-relaxed text-text-muted">
-                  Commercial, music video, and narrative production from our
-                  North Hollywood studio — Porsche, Lamborghini, ARTBAT, and
-                  more.
-                </p>
               </div>
               <Link href="/work" className="text-nav link-arrow text-text-muted">
                 Browse by category →

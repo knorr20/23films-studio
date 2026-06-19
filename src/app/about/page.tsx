@@ -31,13 +31,10 @@ export default function AboutPage() {
 
           <ScrollReveal>
             <div className="mt-16 border-t border-border pt-8">
-              <p className="text-caption mb-2">Studio</p>
-              <address className="text-base not-italic leading-relaxed text-text">
-                {siteConfig.address.street}
-                <br />
-                {siteConfig.address.city}, {siteConfig.address.region}{" "}
-                {siteConfig.address.postalCode}
-              </address>
+              <p className="text-caption mb-2">Location</p>
+              <p className="text-base text-text">
+                {siteConfig.address.city}, {siteConfig.address.region}
+              </p>
             </div>
           </ScrollReveal>
         </div>
