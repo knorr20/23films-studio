@@ -178,7 +178,7 @@ export const projects: Project[] = [
     category: "music-video",
     client: "ARTBAT",
     vimeoId: "1126297949",
-    thumbnail: "/work/artbat-braev-humans.jpg",
+    thumbnail: "/work/artbat-braev-humans/vimeo-poster.jpg",
     featured: false,
     description:
       "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
