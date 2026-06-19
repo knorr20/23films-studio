@@ -15,7 +15,7 @@ export default function AboutPage() {
           <ScrollReveal>
             <p className="text-caption mb-4">Who we are</p>
             <h1 className="font-display text-4xl text-display text-text md:text-6xl">
-              {siteConfig.name}
+              {siteConfig.companyName}
             </h1>
           </ScrollReveal>
 
