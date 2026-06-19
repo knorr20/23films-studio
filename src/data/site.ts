@@ -15,7 +15,7 @@ export const siteConfig = {
     country: "US",
   },
   social: {
-    instagram: "https://www.instagram.com/t.w.e.n.t.y.t.h.r.e.e/",
+    instagram: "https://www.instagram.com/23films.studio?igsh=NTc4MTIwNjQ2YQ==",
     telegram: "https://t.me/films23studio",
     whatsapp: "https://wa.me/12133359103",
   },
