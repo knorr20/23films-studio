@@ -16,7 +16,13 @@ const INITIAL_WIDTH = 168;
 const CANVAS_WIDTH = 320;
 const CANVAS_HEIGHT = 400;
 const GROUND_PADDING = 36;
-const MIN_OVERLAP = 2;
+
+/** Minimum shared width before game over (px). */
+const MIN_OVERLAP = 6;
+/** Center offset treated as a perfect snap (px). */
+const PERFECT_CENTER_TOLERANCE = 9;
+/** Width loss still forgiven into a perfect stack (px). */
+const PERFECT_WIDTH_TOLERANCE = 14;
 
 type Block = {
   x: number;
@@ -37,6 +43,12 @@ type DropAnim = {
   fromY: number;
   progress: number;
   nextMoverW: number;
+  isPerfect: boolean;
+};
+
+type Flash = {
+  text: string;
+  opacity: number;
 };
 
 type Phase = "idle" | "playing" | "over";
@@ -51,9 +63,89 @@ function writeBest(score: number) {
   localStorage.setItem(STORAGE_KEY, String(score));
 }
 
+function streakMultiplier(streak: number): number {
+  if (streak >= 8) return 4;
+  if (streak >= 5) return 3;
+  if (streak >= 3) return 2;
+  return 1;
+}
+
+function resolvePlacement(
+  moverX: number,
+  moverW: number,
+  top: Block,
+  moverY: number,
+): {
+  placed: Block;
+  isPerfect: boolean;
+  trims: TrimPiece[];
+} | null {
+  const overlapLeft = Math.max(moverX, top.x);
+  const overlapRight = Math.min(moverX + moverW, top.x + top.w);
+  const overlapW = overlapRight - overlapLeft;
+
+  if (overlapW <= MIN_OVERLAP) return null;
+
+  const moverCenter = moverX + moverW / 2;
+  const topCenter = top.x + top.w / 2;
+  const centerOffset = Math.abs(moverCenter - topCenter);
+  const widthDelta = Math.abs(moverW - top.w);
+  const edgeDelta = Math.max(
+    Math.abs(moverX - top.x),
+    Math.abs(moverX + moverW - (top.x + top.w)),
+  );
+
+  const canSnapPerfect =
+    centerOffset <= PERFECT_CENTER_TOLERANCE &&
+    edgeDelta <= PERFECT_WIDTH_TOLERANCE &&
+    overlapW >= top.w - PERFECT_WIDTH_TOLERANCE;
+
+  if (canSnapPerfect) {
+    return {
+      placed: { x: top.x, y: moverY, w: top.w },
+      isPerfect: true,
+      trims: [],
+    };
+  }
+
+  const trims: TrimPiece[] = [];
+
+  if (moverX < overlapLeft) {
+    trims.push({
+      x: moverX,
+      y: moverY,
+      w: overlapLeft - moverX,
+      vy: 0.4,
+      opacity: 1,
+    });
+  }
+
+  if (moverX + moverW > overlapRight) {
+    trims.push({
+      x: overlapRight,
+      y: moverY,
+      w: moverX + moverW - overlapRight,
+      vy: 0.4,
+      opacity: 1,
+    });
+  }
+
+  const isPerfect =
+    trims.length === 0 &&
+    centerOffset <= 2 &&
+    widthDelta <= 2;
+
+  return {
+    placed: { x: overlapLeft, y: moverY, w: overlapW },
+    isPerfect,
+    trims,
+  };
+}
+
 export function TowerBlox404() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
+  const logoRef = useRef<HTMLImageElement | null>(null);
   const stateRef = useRef({
     phase: "idle" as Phase,
     blocks: [] as Block[],
@@ -63,18 +155,27 @@ export function TowerBlox404() {
     moverSpeed: 2.1,
     cameraY: 0,
     score: 0,
+    streak: 0,
     dropAnim: null as DropAnim | null,
     pendingMoverW: INITIAL_WIDTH,
+    flash: null as Flash | null,
   });
 
   const [score, setScore] = useState(0);
   const [best, setBest] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [multiplier, setMultiplier] = useState(1);
   const [phase, setPhase] = useState<Phase>("idle");
 
-  const syncUi = useCallback((nextPhase: Phase, nextScore: number) => {
-    setPhase(nextPhase);
-    setScore(nextScore);
-  }, []);
+  const syncUi = useCallback(
+    (nextPhase: Phase, nextScore: number, nextStreak: number) => {
+      setPhase(nextPhase);
+      setScore(nextScore);
+      setStreak(nextStreak);
+      setMultiplier(streakMultiplier(nextStreak));
+    },
+    [],
+  );
 
   const resetGame = useCallback(() => {
     const baseY = CANVAS_HEIGHT - GROUND_PADDING - BLOCK_HEIGHT;
@@ -93,17 +194,35 @@ export function TowerBlox404() {
       moverSpeed: 2.1,
       cameraY: 0,
       score: 0,
+      streak: 0,
       dropAnim: null,
       pendingMoverW: INITIAL_WIDTH,
+      flash: null,
     };
-    syncUi("playing", 0);
+    syncUi("playing", 0, 0);
   }, [syncUi]);
 
   const finishDrop = useCallback((state: typeof stateRef.current, anim: DropAnim) => {
     state.blocks.push(anim.block);
-    state.score += 1;
+
+    if (anim.isPerfect) {
+      state.streak += 1;
+      const mult = streakMultiplier(state.streak);
+      state.score += mult;
+      state.flash = {
+        text:
+          state.streak >= 3
+            ? `PERFECT x${state.streak}`
+            : "PERFECT",
+        opacity: 1,
+      };
+    } else {
+      state.streak = 0;
+      state.score += 1;
+    }
+
     state.pendingMoverW = anim.nextMoverW;
-    state.moverSpeed = Math.min(4.8, 2.1 + state.score * 0.08);
+    state.moverSpeed = Math.min(4.8, 2.1 + state.blocks.length * 0.07);
     state.moverX = Math.random() > 0.5 ? 0 : CANVAS_WIDTH - anim.nextMoverW;
     state.moverDir = state.moverX < CANVAS_WIDTH / 2 ? 1 : -1;
     state.dropAnim = null;
@@ -113,8 +232,8 @@ export function TowerBlox404() {
       CANVAS_HEIGHT - GROUND_PADDING - anim.block.y - 140,
     );
     state.cameraY += (targetCamera - state.cameraY) * 0.35;
-    setScore(state.score);
-  }, []);
+    syncUi(state.phase, state.score, state.streak);
+  }, [syncUi]);
 
   const placeBlock = useCallback(() => {
     const state = stateRef.current;
@@ -123,52 +242,27 @@ export function TowerBlox404() {
     const top = state.blocks[state.blocks.length - 1];
     const moverW = state.pendingMoverW;
     const moverY = top.y - BLOCK_HEIGHT;
-    const overlapLeft = Math.max(state.moverX, top.x);
-    const overlapRight = Math.min(state.moverX + moverW, top.x + top.w);
-    const overlapW = overlapRight - overlapLeft;
+    const result = resolvePlacement(state.moverX, moverW, top, moverY);
 
-    if (overlapW <= MIN_OVERLAP) {
+    if (!result) {
       state.phase = "over";
       const currentBest = readBest();
       if (state.score > currentBest) {
         writeBest(state.score);
         setBest(state.score);
       }
-      syncUi("over", state.score);
+      syncUi("over", state.score, 0);
       return;
     }
 
-    if (state.moverX < overlapLeft) {
-      state.trimPieces.push({
-        x: state.moverX,
-        y: moverY,
-        w: overlapLeft - state.moverX,
-        vy: 0.4,
-        opacity: 1,
-      });
-    }
-
-    if (state.moverX + moverW > overlapRight) {
-      state.trimPieces.push({
-        x: overlapRight,
-        y: moverY,
-        w: state.moverX + moverW - overlapRight,
-        vy: 0.4,
-        opacity: 1,
-      });
-    }
-
-    const placed: Block = {
-      x: overlapLeft,
-      y: moverY,
-      w: overlapW,
-    };
+    state.trimPieces.push(...result.trims);
 
     state.dropAnim = {
-      block: placed,
+      block: result.placed,
       fromY: moverY - 20,
       progress: 0,
-      nextMoverW: overlapW,
+      nextMoverW: result.placed.w,
+      isPerfect: result.isPerfect,
     };
   }, [syncUi]);
 
@@ -183,6 +277,11 @@ export function TowerBlox404() {
 
   useEffect(() => {
     setBest(readBest());
+    const logo = new Image();
+    logo.src = "/logo.png";
+    logo.onload = () => {
+      logoRef.current = logo;
+    };
   }, []);
 
   useEffect(() => {
@@ -211,11 +310,28 @@ export function TowerBlox404() {
     canvas.style.height = `${CANVAS_HEIGHT}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    const drawBlock = (block: Block, fill: string, stroke: string) => {
+    const drawBlock = (
+      block: Block,
+      fill: string,
+      stroke: string,
+      isBase = false,
+    ) => {
       ctx.fillStyle = fill;
       ctx.fillRect(block.x, block.y, block.w, BLOCK_HEIGHT);
       ctx.strokeStyle = stroke;
       ctx.strokeRect(block.x + 0.5, block.y + 0.5, block.w - 1, BLOCK_HEIGHT - 1);
+
+      if (isBase && logoRef.current) {
+        const logo = logoRef.current;
+        const maxLogoW = Math.min(block.w * 0.42, 72);
+        const logoH = (logo.height / logo.width) * maxLogoW;
+        const logoX = block.x + (block.w - maxLogoW) / 2;
+        const logoY = block.y + (BLOCK_HEIGHT - logoH) / 2;
+        ctx.save();
+        ctx.globalAlpha = 0.88;
+        ctx.drawImage(logo, logoX, logoY, maxLogoW, logoH);
+        ctx.restore();
+      }
     };
 
     const draw = () => {
@@ -235,9 +351,9 @@ export function TowerBlox404() {
       ctx.save();
       ctx.translate(0, state.cameraY);
 
-      for (const block of state.blocks) {
-        drawBlock(block, "#141414", "#2a2a2a");
-      }
+      state.blocks.forEach((block, index) => {
+        drawBlock(block, "#141414", "#2a2a2a", index === 0);
+      });
 
       for (const piece of state.trimPieces) {
         ctx.fillStyle = `rgba(245, 245, 245, ${piece.opacity * 0.5})`;
@@ -274,6 +390,18 @@ export function TowerBlox404() {
             "#f5f5f5",
             "#d8d8d8",
           );
+        }
+      }
+
+      if (state.flash) {
+        state.flash.opacity -= 0.045;
+        if (state.flash.opacity <= 0) {
+          state.flash = null;
+        } else {
+          ctx.fillStyle = `rgba(245, 245, 245, ${state.flash.opacity})`;
+          ctx.font = "600 10px Inter, sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText(state.flash.text, CANVAS_WIDTH / 2, 28);
         }
       }
 
@@ -337,13 +465,21 @@ export function TowerBlox404() {
           aria-label="Tower Blox stacking game"
         />
 
-        <div className="flex items-center gap-8 text-nav text-text-muted">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-nav text-text-muted">
           <p>
             Score <span className="text-text">{score}</span>
           </p>
           <p>
             Best <span className="text-text">{best}</span>
           </p>
+          {streak > 0 && (
+            <p>
+              Streak <span className="text-text">{streak}</span>
+              {multiplier > 1 && (
+                <span className="text-text-subtle"> · x{multiplier}</span>
+              )}
+            </p>
+          )}
         </div>
 
         <p className="text-caption">{hint}</p>
