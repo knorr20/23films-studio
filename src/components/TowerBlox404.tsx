@@ -12,25 +12,25 @@ import {
 const STORAGE_KEY = "23films-towerblox-best";
 
 const BLOCK_HEIGHT = 26;
-const INITIAL_WIDTH = 184;
+const INITIAL_WIDTH = 176;
 const CANVAS_WIDTH = 320;
 const CANVAS_HEIGHT = 400;
 const GROUND_PADDING = 36;
-const BASE_SPEED = 1.45;
-const MAX_SPEED = 3.2;
-const SPEED_GROWTH = 0.035;
+const BASE_SPEED = 1.8;
+const MAX_SPEED = 4;
+const SPEED_GROWTH = 0.05;
 
 /** Minimum shared width before game over (px). */
-const MIN_OVERLAP = 3;
+const MIN_OVERLAP = 5;
 /** Center offset treated as a perfect snap (px). */
-const PERFECT_CENTER_TOLERANCE = 18;
+const PERFECT_CENTER_TOLERANCE = 13;
 /** Width loss still forgiven into a perfect stack (px). */
-const PERFECT_WIDTH_TOLERANCE = 30;
+const PERFECT_WIDTH_TOLERANCE = 22;
 /** Soft rescue when enough block still lands on target (% of top width). */
-const SOFT_RESCUE_RATIO = 0.38;
-const SOFT_RESCUE_CENTER = 24;
+const SOFT_RESCUE_RATIO = 0.3;
+const SOFT_RESCUE_CENTER = 18;
 /** Max width lost on a single non-perfect drop (% of top width). */
-const MAX_TRIM_RATIO = 0.1;
+const MAX_TRIM_RATIO = 0.14;
 
 type Block = {
   x: number;
