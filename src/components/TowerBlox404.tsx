@@ -12,17 +12,25 @@ import {
 const STORAGE_KEY = "23films-towerblox-best";
 
 const BLOCK_HEIGHT = 26;
-const INITIAL_WIDTH = 168;
+const INITIAL_WIDTH = 184;
 const CANVAS_WIDTH = 320;
 const CANVAS_HEIGHT = 400;
 const GROUND_PADDING = 36;
+const BASE_SPEED = 1.45;
+const MAX_SPEED = 3.2;
+const SPEED_GROWTH = 0.035;
 
 /** Minimum shared width before game over (px). */
-const MIN_OVERLAP = 6;
+const MIN_OVERLAP = 3;
 /** Center offset treated as a perfect snap (px). */
-const PERFECT_CENTER_TOLERANCE = 9;
+const PERFECT_CENTER_TOLERANCE = 18;
 /** Width loss still forgiven into a perfect stack (px). */
-const PERFECT_WIDTH_TOLERANCE = 14;
+const PERFECT_WIDTH_TOLERANCE = 30;
+/** Soft rescue when enough block still lands on target (% of top width). */
+const SOFT_RESCUE_RATIO = 0.38;
+const SOFT_RESCUE_CENTER = 24;
+/** Max width lost on a single non-perfect drop (% of top width). */
+const MAX_TRIM_RATIO = 0.1;
 
 type Block = {
   x: number;
@@ -100,10 +108,14 @@ function resolvePlacement(
     edgeDelta <= PERFECT_WIDTH_TOLERANCE &&
     overlapW >= top.w - PERFECT_WIDTH_TOLERANCE;
 
-  if (canSnapPerfect) {
+  const canSoftRescue =
+    centerOffset <= SOFT_RESCUE_CENTER &&
+    overlapW >= top.w * SOFT_RESCUE_RATIO;
+
+  if (canSnapPerfect || canSoftRescue) {
     return {
       placed: { x: top.x, y: moverY, w: top.w },
-      isPerfect: true,
+      isPerfect: canSnapPerfect,
       trims: [],
     };
   }
@@ -132,11 +144,23 @@ function resolvePlacement(
 
   const isPerfect =
     trims.length === 0 &&
-    centerOffset <= 2 &&
-    widthDelta <= 2;
+    centerOffset <= 3 &&
+    widthDelta <= 3;
+
+  let placedW = overlapW;
+  const minWidthAfterTrim = top.w * (1 - MAX_TRIM_RATIO);
+  if (placedW < minWidthAfterTrim) {
+    placedW = minWidthAfterTrim;
+  }
+
+  const placedCenter = overlapLeft + overlapW / 2;
+  const placedX = Math.max(
+    0,
+    Math.min(placedCenter - placedW / 2, CANVAS_WIDTH - placedW),
+  );
 
   return {
-    placed: { x: overlapLeft, y: moverY, w: overlapW },
+    placed: { x: placedX, y: moverY, w: placedW },
     isPerfect,
     trims,
   };
@@ -145,14 +169,13 @@ function resolvePlacement(
 export function TowerBlox404() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
-  const logoRef = useRef<HTMLImageElement | null>(null);
   const stateRef = useRef({
     phase: "idle" as Phase,
     blocks: [] as Block[],
     trimPieces: [] as TrimPiece[],
     moverX: 0,
     moverDir: 1,
-    moverSpeed: 2.1,
+    moverSpeed: BASE_SPEED,
     cameraY: 0,
     score: 0,
     streak: 0,
@@ -191,7 +214,7 @@ export function TowerBlox404() {
       trimPieces: [],
       moverX: (CANVAS_WIDTH - INITIAL_WIDTH) / 2,
       moverDir: 1,
-      moverSpeed: 2.1,
+      moverSpeed: BASE_SPEED,
       cameraY: 0,
       score: 0,
       streak: 0,
@@ -222,7 +245,7 @@ export function TowerBlox404() {
     }
 
     state.pendingMoverW = anim.nextMoverW;
-    state.moverSpeed = Math.min(4.8, 2.1 + state.blocks.length * 0.07);
+    state.moverSpeed = Math.min(MAX_SPEED, BASE_SPEED + state.blocks.length * SPEED_GROWTH);
     state.moverX = Math.random() > 0.5 ? 0 : CANVAS_WIDTH - anim.nextMoverW;
     state.moverDir = state.moverX < CANVAS_WIDTH / 2 ? 1 : -1;
     state.dropAnim = null;
@@ -277,11 +300,6 @@ export function TowerBlox404() {
 
   useEffect(() => {
     setBest(readBest());
-    const logo = new Image();
-    logo.src = "/logo.png";
-    logo.onload = () => {
-      logoRef.current = logo;
-    };
   }, []);
 
   useEffect(() => {
@@ -310,28 +328,11 @@ export function TowerBlox404() {
     canvas.style.height = `${CANVAS_HEIGHT}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    const drawBlock = (
-      block: Block,
-      fill: string,
-      stroke: string,
-      isBase = false,
-    ) => {
+    const drawBlock = (block: Block, fill: string, stroke: string) => {
       ctx.fillStyle = fill;
       ctx.fillRect(block.x, block.y, block.w, BLOCK_HEIGHT);
       ctx.strokeStyle = stroke;
       ctx.strokeRect(block.x + 0.5, block.y + 0.5, block.w - 1, BLOCK_HEIGHT - 1);
-
-      if (isBase && logoRef.current) {
-        const logo = logoRef.current;
-        const maxLogoW = Math.min(block.w * 0.42, 72);
-        const logoH = (logo.height / logo.width) * maxLogoW;
-        const logoX = block.x + (block.w - maxLogoW) / 2;
-        const logoY = block.y + (BLOCK_HEIGHT - logoH) / 2;
-        ctx.save();
-        ctx.globalAlpha = 0.88;
-        ctx.drawImage(logo, logoX, logoY, maxLogoW, logoH);
-        ctx.restore();
-      }
     };
 
     const draw = () => {
@@ -351,9 +352,9 @@ export function TowerBlox404() {
       ctx.save();
       ctx.translate(0, state.cameraY);
 
-      state.blocks.forEach((block, index) => {
-        drawBlock(block, "#141414", "#2a2a2a", index === 0);
-      });
+      for (const block of state.blocks) {
+        drawBlock(block, "#141414", "#2a2a2a");
+      }
 
       for (const piece of state.trimPieces) {
         ctx.fillStyle = `rgba(245, 245, 245, ${piece.opacity * 0.5})`;
