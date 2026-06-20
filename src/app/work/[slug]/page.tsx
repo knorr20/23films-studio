@@ -69,7 +69,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
               {project.client
                 ? [project.client, PROJECT_CATEGORY_LABELS[project.category]]
                     .filter(Boolean)
-                    .join(" · ")
+                    .join(", ")
                 : project.subtitle}
             </p>
             <h1 className="font-display text-4xl text-display text-text md:text-6xl">

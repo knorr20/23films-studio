@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "23 Films",
   companyName: "23 Production",
   legalName: "23 Production LLC",
-  tagline: "Concept · Production · Post",
+  tagline: "Concept / Production / Post",
   description:
     "23 Films is a full-service video production studio in North Hollywood, Los Angeles. Commercial, automotive, music video, real estate, and branded content.",
   url: "https://23films.studio",
@@ -23,7 +23,7 @@ export const siteConfig = {
   },
   studioRentalUrl: "https://23photostudio.com",
   footerNote:
-    "Full-service production for brands, artists, and filmmakers — from first frame to final cut.",
+    "Full-service production for brands, artists, and filmmakers, from first frame to final cut.",
 };
 
 export const aboutParagraphs = [

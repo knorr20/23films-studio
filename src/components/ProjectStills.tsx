@@ -20,7 +20,7 @@ export function ProjectStills({
           <figure key={`${src}-${index}`} className="w-full bg-bg">
             <Image
               src={src}
-              alt={`${title} — frame ${index + 1}`}
+              alt={`${title}, frame ${index + 1}`}
               width={1920}
               height={1080}
               className="h-auto w-full"
@@ -35,7 +35,7 @@ export function ProjectStills({
           >
             <Image
               src={src}
-              alt={`${title} — frame ${index + 1}`}
+              alt={`${title}, frame ${index + 1}`}
               fill
               className="object-cover"
               sizes="(max-width: 1440px) 100vw, 1440px"

@@ -30,7 +30,7 @@ export interface Project {
 
 export const SHOWREEL_VIMEO_ID = "982264133";
 
-/** Local fullscreen hero background — replace file at public/hero/hero.mp4 */
+/** Local fullscreen hero background. replace file at public/hero/hero.mp4 */
 export const HERO_VIDEO_SRC = "/hero/hero.mp4";
 
 export const projects: Project[] = [
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     thumbnail: "/work/lamborghini-aventador/vimeo-poster.jpg",
     featured: true,
     description:
-      "COMMERCIAL FOR RR AUTO-GROUP — DRAMATIC LIGHT, OPEN ROAD, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR RR AUTO-GROUP. DRAMATIC LIGHT, OPEN ROAD, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/lamborghini-aventador/still01.png",
       "/work/lamborghini-aventador/still02.png",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     thumbnail: "/work/estate-in-palma-de-mallorca-spain/still01.png",
     featured: true,
     description:
-      "COMMERCIAL FOR ENGEL & VÖLKERS — MALLORCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR ENGEL & VÖLKERS. MALLORCA ESTATE: ARCHITECTURE, LANDSCAPE, AND MEDITERRANEAN LIFESTYLE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/estate-in-palma-de-mallorca-spain/still01.png",
       "/work/estate-in-palma-de-mallorca-spain/still02.png",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     thumbnail: "/work/new-video-for-nuvola-capitanio/still01.png",
     featured: true,
     description:
-      "COMMERCIAL FOR ENGEL & VÖLKERS — LONDON'S MOST DISTINCTIVE PENTHOUSE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR ENGEL & VÖLKERS. LONDON'S MOST DISTINCTIVE PENTHOUSE. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/new-video-for-nuvola-capitanio/still01.png",
       "/work/new-video-for-nuvola-capitanio/still02.png",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     thumbnail: "/work/lucent-out-to-sea.jpg",
     featured: false,
     description:
-      "BRAND CAMPAIGN FOR LUCENT — YACHT LIFE, COASTAL GOLDEN HOUR, AND EDITORIAL EASE ON THE OPEN WATER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND CAMPAIGN FOR LUCENT. YACHT LIFE, COASTAL GOLDEN HOUR, AND EDITORIAL EASE ON THE OPEN WATER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/lucent-out-to-sea/still01.png",
       "/work/lucent-out-to-sea/still02.png",
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     thumbnail: "/work/sam-asghari-forge/vimeo-poster.jpg",
     featured: false,
     description:
-      "BRAND FILM FOR SAM ASGHARI — BOXING RINGS, DESERT GRIND, GOLDEN HOUR TRAINING, AND RAW ATHLETIC POWER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND FILM FOR SAM ASGHARI. BOXING RINGS, DESERT GRIND, GOLDEN HOUR TRAINING, AND RAW ATHLETIC POWER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/sam-asghari-forge/still01.png",
       "/work/sam-asghari-forge/still02.png",
@@ -147,14 +147,14 @@ export const projects: Project[] = [
   },
   {
     slug: "morten-artbat-hollow",
-    title: "MORTEN & ARTBAT ft. Bonn — \"Hollow\"",
+    title: "MORTEN & ARTBAT ft. Bonn. \"Hollow\"",
     category: "music-video",
     client: "ARTBAT",
     vimeoId: "1126298417",
     thumbnail: "/work/morten-artbat-hollow/card-thumb.png",
     featured: false,
     description:
-      "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "OFFICIAL MUSIC VIDEO. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/morten-artbat-hollow/hollowthumb1.png",
       "/work/morten-artbat-hollow/hollowthumb2.png",
@@ -167,14 +167,14 @@ export const projects: Project[] = [
   },
   {
     slug: "artbat-braev-humans",
-    title: "ARTBAT ft. Braev — \"Humans\"",
+    title: "ARTBAT ft. Braev. \"Humans\"",
     category: "music-video",
     client: "ARTBAT",
     vimeoId: "1126297949",
     thumbnail: "/work/artbat-braev-humans/vimeo-poster.jpg",
     featured: false,
     description:
-      "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "OFFICIAL MUSIC VIDEO. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/artbat-braev-humans/still01.png",
       "/work/artbat-braev-humans/still02.png",
@@ -190,14 +190,14 @@ export const projects: Project[] = [
   },
   {
     slug: "morten-artbat-culture",
-    title: "MORTEN & ARTBAT — \"Culture\"",
+    title: "MORTEN & ARTBAT. \"Culture\"",
     category: "music-video",
     client: "ARTBAT",
     vimeoId: "1126295526",
     thumbnail: "/work/morten-artbat-culture.jpg",
     featured: false,
     description:
-      "OFFICIAL MUSIC VIDEO — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "OFFICIAL MUSIC VIDEO. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/morten-artbat-culture/still01.png",
       "/work/morten-artbat-culture/still02.png",
@@ -221,7 +221,7 @@ export const projects: Project[] = [
     thumbnail: "/work/porsche-gt3/vimeo-poster.jpg",
     featured: true,
     description:
-      "COMMERCIAL FOR PORSCHE GT3 — PACE, PRECISION, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR PORSCHE GT3. PACE, PRECISION, AND PRESENCE IN MOTION. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/porsche-gt3/still01.png",
       "/work/porsche-gt3/still02.png",
@@ -240,7 +240,7 @@ export const projects: Project[] = [
     thumbnail: "/work/lucent-show-up.jpg",
     featured: false,
     description:
-      "BRAND CAMPAIGN FOR LUCENT — EDITORIAL PORTRAITS, LUXURY FASHION, AND THE ENERGY OF ARRIVAL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND CAMPAIGN FOR LUCENT. EDITORIAL PORTRAITS, LUXURY FASHION, AND THE ENERGY OF ARRIVAL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/lucent-show-up/still01.png",
       "/work/lucent-show-up/still02.png",
@@ -260,7 +260,7 @@ export const projects: Project[] = [
     thumbnail: "/work/lucent-frame-by-frame.jpg",
     featured: false,
     description:
-      "BRAND CAMPAIGN FOR LUCENT — VINTAGE CALIFORNIA, FILM GRAIN, AND ROMANCE CAPTURED FRAME BY FRAME. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND CAMPAIGN FOR LUCENT. VINTAGE CALIFORNIA, FILM GRAIN, AND ROMANCE CAPTURED FRAME BY FRAME. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/lucent-frame-by-frame/still01.png",
       "/work/lucent-frame-by-frame/still02.png",
@@ -280,7 +280,7 @@ export const projects: Project[] = [
     thumbnail: "/work/growerev/vimeo-poster.jpg",
     featured: false,
     description:
-      "BRAND FILM FOR GROWEREV — EDITORIAL PACING AND PRODUCT-FOCUSED VISUALS. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND FILM FOR GROWEREV. EDITORIAL PACING AND PRODUCT-FOCUSED VISUALS. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/growerev/still01.webp",
       "/work/growerev/still02.webp",
@@ -301,7 +301,7 @@ export const projects: Project[] = [
     thumbnail: "/work/antischool-speak-up/card-thumb.png",
     featured: false,
     description:
-      "BRAND FILM FOR ANTISCHOOL — TRAVEL, DISCOVERY, AND THE PATH TO SPEAKING UP. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND FILM FOR ANTISCHOOL. TRAVEL, DISCOVERY, AND THE PATH TO SPEAKING UP. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/antischool-speak-up/still01.png",
       "/work/antischool-speak-up/still02.png",
@@ -317,14 +317,14 @@ export const projects: Project[] = [
   {
     slug: "soda-please",
     title: "Soda Please",
-    subtitle: "Original Soda Please · Teaser",
+    subtitle: "Original Soda Please, Teaser",
     cardMeta: "Original",
     category: "narrative",
     vimeoId: "1126304129",
     thumbnail: "/work/soda-please-poster.jpg",
     featured: false,
     description:
-      "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "SHORT FILM TEASER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/soda-please/still01.webp",
       "/work/soda-please/still02.webp",
@@ -360,7 +360,7 @@ export const projects: Project[] = [
     thumbnail: "/work/new-video-for-upholstery-inc/vimeo-poster.jpg",
     featured: false,
     description:
-      "COMMERCIAL FOR NEW LIFE — UPHOLSTERY REIMAGINED WITH CINEMATIC AUTOMOTIVE DETAIL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "COMMERCIAL FOR NEW LIFE. UPHOLSTERY REIMAGINED WITH CINEMATIC AUTOMOTIVE DETAIL. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/new-video-for-upholstery-inc/still01.jpg",
       "/work/new-video-for-upholstery-inc/still02.webp",
@@ -390,14 +390,14 @@ export const projects: Project[] = [
   {
     slug: "soda-please-ii-teaser",
     title: "Soda Please II",
-    subtitle: "Original Soda Please II · Teaser",
+    subtitle: "Original Soda Please II, Teaser",
     cardMeta: "Original",
     category: "narrative",
     vimeoId: "1202300493",
     thumbnail: "/work/soda-please-ii-teaser/vimeo-poster.jpg",
     featured: false,
     description:
-      "SHORT FILM TEASER — FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "SHORT FILM TEASER. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/soda-please-ii-teaser/still01.webp",
       "/work/soda-please-ii-teaser/still02.webp",
@@ -415,7 +415,7 @@ export const projects: Project[] = [
     thumbnail: "/work/mandi-holding.jpg",
     featured: false,
     description:
-      "BRAND FILM FOR MARDI HOLDING — AERIAL VIEWS OF PROPERTIES, DEVELOPMENT, AND INFOGRAPHIC STORYTELLING. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
+      "BRAND FILM FOR MARDI HOLDING. AERIAL VIEWS OF PROPERTIES, DEVELOPMENT, AND INFOGRAPHIC STORYTELLING. FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST.",
     stills: [
       "/work/mandi-holding/still01.jpg",
       "/work/mandi-holding/still02.webp",
@@ -452,7 +452,7 @@ export const projects: Project[] = [
     thumbnail: "/work/sandy-aouad-beauty-of-poverty/vimeo-poster.jpg",
     featured: false,
     description:
-      "FEATURE FILM BY SANDY AOUAD — PREMIERED AT CANNES 2025. STREAMING ON AMAZON PRIME. DIRECTED AND PRODUCED BY 23 FILMS.",
+      "FEATURE FILM BY SANDY AOUAD. PREMIERED AT CANNES 2025. STREAMING ON AMAZON PRIME. DIRECTED AND PRODUCED BY 23 FILMS.",
     stills: [
       "/work/sandy-aouad-beauty-of-poverty/still01.png",
       "/work/sandy-aouad-beauty-of-poverty/still02.png",

@@ -57,33 +57,33 @@ export function createPageMetadata({
 
 export const pageSeo = {
   home: {
-    title: "23 Films — Video Production Studio in North Hollywood, Los Angeles",
+    title: "23 Films | Video Production Studio in North Hollywood, Los Angeles",
     description:
       "23 Films is a full-service video production studio in North Hollywood, LA. Commercial, automotive, music video, real estate, and branded content for Porsche, Lamborghini, ARTBAT, and more.",
     path: "/",
   },
   work: {
-    title: "Work — Commercial, Music Video & Narrative",
+    title: "Work | Commercial, Music Video & Narrative",
     description:
-      "Portfolio of commercial films, music videos, and narrative work by 23 Films — a North Hollywood production studio serving Los Angeles and beyond.",
+      "Portfolio of commercial films, music videos, and narrative work by 23 Films, a North Hollywood production studio serving Los Angeles and beyond.",
     path: "/work",
   },
   services: {
-    title: "Services — Commercial, Corporate & Music Video Production",
+    title: "Services | Commercial, Corporate & Music Video Production",
     description:
       "Commercial, corporate, music video, real estate, podcast, photography, and studio rental at 10710 Burbank Blvd, North Hollywood, CA 91601.",
     path: "/services",
   },
   about: {
-    title: "About — 23 Films Video Production Studio",
+    title: "About | 23 Films Video Production Studio",
     description:
-      "23 Films is a North Hollywood video production studio. End-to-end commercial, music video, and branded content — from concept and production to final edit, sound, and color.",
+      "23 Films is a North Hollywood video production studio. End-to-end commercial, music video, and branded content, from concept and production to final edit, sound, and color.",
     path: "/about",
   },
   contact: {
-    title: "Contact — Start a Project",
+    title: "Contact | Start a Project",
     description:
-      "Contact 23 Films in North Hollywood for commercial video, brand films, and music video production. Email, phone, or WhatsApp — Los Angeles and beyond.",
+      "Contact 23 Films in North Hollywood for commercial video, brand films, and music video production. Email, phone, or WhatsApp. Los Angeles and beyond.",
     path: "/contact",
   },
 } as const;
@@ -91,13 +91,13 @@ export const pageSeo = {
 export function projectPageTitle(project: Project): string {
   const meta =
     project.client ?? PROJECT_CATEGORY_LABELS[project.category];
-  return `${project.title} — ${meta}`;
+  return `${project.title} | ${meta}`;
 }
 
 export function projectSeoDescription(project: Project): string {
   const cleaned = project.description
     .replace(/\s*FULL PRODUCTION BY 23 FILMS, FROM CONCEPT TO POST\.?/gi, "")
-    .replace(/\s*OFFICIAL MUSIC VIDEO\s*—?\s*/gi, "Official music video. ")
+    .replace(/\s*OFFICIAL MUSIC VIDEO\s*[.—]?\s*/gi, "Official music video. ")
     .replace(/\s+/g, " ")
     .trim();
 

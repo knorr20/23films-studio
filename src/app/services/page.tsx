@@ -17,7 +17,7 @@ export default function ServicesPage() {
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-text-muted">
               End-to-end production across commercial, corporate, music,
-              real estate, podcasts, and photography — from concept to final
+              real estate, podcasts, and photography, from concept to final
               delivery.
             </p>
           </ScrollReveal>
